@@ -16,7 +16,7 @@ Use this element if you want to have a "ruler" in terms of defined refx attribut
 ## Code snippet
 
 ``` xml
-<hill version="DSJ4-1.5.0">
+<hill version="DSJ4-1.7.0">
     <!-- Rest of code omitted for clearance -->
 
     <!-- If you declare the following refx element -->

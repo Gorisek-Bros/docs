@@ -68,7 +68,7 @@ If you have two surfaces that are overlapping each other, specify the zbias attr
 ## Code snippets
 
 ``` xml
-<hill version="DSJ4-1.5.0">
+<hill version="DSJ4-1.7.0">
     <!-- Rest of code omitted for clearance -->
     <!-- 
         This XML outputs two railings on both inrun sides.
