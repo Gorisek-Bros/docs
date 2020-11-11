@@ -1,6 +1,7 @@
 module.exports = {
   title: "DSJ4 Hills Engine Documentation",
   head: [
+    ["link", { rel: "icon", href: "favicon.ico" }],
     ["meta", { name: "robots", content: "noindex" }],
     [
       "meta",
