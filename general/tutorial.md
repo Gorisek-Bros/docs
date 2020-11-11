@@ -18,7 +18,7 @@ Custom hills file naming schema is following: \<hill-name\>-HS\<hs\>-\<country\>
 Open this file in the text editor, paste the following content, and save the file. This XML code already contains everything you need to create a custom hill - location, weather, inrun and hill profile, etc. No hill constructions are included yet. Also, gate numbers were omitted.
 
 ``` xml
-<hill version="DSJ4-1.5.0">
+<hill version="DSJ4-1.7.0">
     <location latitude="49.1976" longitude="20.0712" orientation="245" timezone="2" altitude="1300" />
     <weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1" />
     <inrun>
@@ -180,7 +180,7 @@ We will remove the top pillar side.
 ## Final code
 
 ``` xml
-<hill version="DSJ4-1.5.0">
+<hill version="DSJ4-1.7.0">
     <location latitude="49.1976" longitude="20.0712" orientation="245" timezone="2" altitude="1300" />
     <weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1" />
     <inrun>

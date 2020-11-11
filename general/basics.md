@@ -8,7 +8,7 @@ To understand how elements can be placed and how profiles work, knowledge of the
 Inrun start can be used as a reference to the X-axis value:
 
 * the X-axis value is less than 0 behind the beginning of the inrun
-* the X-axis value is equal to 0 in the beginning of the inrun
+* the X-axis value is equal to 0 at the beginning of the inrun
 * the X-axis value is larger than 0 the more you go down with inrun and downhill
 :::
 
@@ -24,7 +24,7 @@ The further you get from the right side of the inrun, the Z-axis value is bigger
 Example code:
 
 ``` xml
-<hill version="DSJ4-1.5.0">
+<hill version="DSJ4-1.7.0">
     <!-- Rest of code omitted for clearance -->
     <!-- Assuming you have the following guardrail defined -->
     <guardrail z1="-1.0" z2="1.0" x="10" />
