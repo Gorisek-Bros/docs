@@ -16,7 +16,7 @@ The beam is a bollard. It's ideal to create for example simple handrail. Many be
 | y1          | Float  |                                                                        | The starting point in position relative to the Y-axis | True     |
 | y2          | Float  |                                                                        | The ending point in position relative to the Y-axis   | True     |
 | refx[1, 2]? | String | A built-in profile which applies for refx                              | A reference to the X-axis, which beam is based on     |          |
-| refy[1, 2]? | String | A built-in profile which applies for refy                              | A reference to the X-axis, which beam is based on     |          |
+| refy[1, 2]? | String | A built-in profile which applies for refy or your defined profile name                              | A reference to the X-axis, which beam is based on     |          |
 | refz[1, 2]? | String | A built-in profile which applies for refz or your defined profile name | A reference to the X-axis, which beam is based on     |          |
 
 ### Sizing beams

@@ -64,7 +64,7 @@ Element name: lights
 | Name        | Type    | Allowed values                                                         | Default value | Description                                           | Optional |
 | ----------- | ------- | ---------------------------------------------------------------------- | ------------- | ----------------------------------------------------- | -------- |
 | refx[1, 2]? | String  | A built-in profile which applies for refx                              | inrun         | A reference to the X-axis, which lights are based on  | True     |
-| refy        | String  | A built-in profile which applies for refy                              | inrun-top     | A reference to the Y-axis, which lights are based on  | True     |
+| refy        | String  | A built-in profile which applies for refy or your defined profile name                              | inrun-top     | A reference to the Y-axis, which lights are based on  | True     |
 | refz        | String  | A built-in profile which applies for refz or your defined profile name |               | A reference to the Z-axis, which lights are based on  |          |
 | x1          | Float   |                                                                        | 0             | The starting point in position relative to the X-axis | True     |
 | x2          | Float   |                                                                        | 100           | The ending point in position relative to the X-axis   | True     |
