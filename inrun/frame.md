@@ -13,7 +13,7 @@ t0, m0 and c0 attributes apply only during the plastic is enabled (so for exampl
 | ---------- | -------------------------- | ------------- | -------------------------------------------------------------------------------------------------- |
 | bh         | +Float                     | 1.5           | Frame height                                                                                       |
 | by         | +Float                     | 0.0           | The position relative to the Y-axis                                                                |
-| bdlz       | Float                      | 0.0           | The position relative to the Z-axis in terms of the right side                                     |
+| bdrz       | Float                      | 0.0           | The position relative to the Z-axis in terms of the right side                                     |
 | bdlz       | Float                      | 0.0           | The position relative to the Z-axis in terms of the left side                                      |
 | snow       | Boolean                    | false         | Toggles snowing between guardrail line and width determined by inrun-left and inrun-right profiles |
 | topsnow    | Boolean                    | true          | Toggles snowing at the flat section above the inrun                                                |
