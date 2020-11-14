@@ -8,13 +8,13 @@ This section of the documentation contains things, that can't be described using
 
 ## Positioning stairs
 
-| Name        | Type   | Allowed values                                                         | Description                                          | Optional |
-| ----------- | ------ | ---------------------------------------------------------------------- | ---------------------------------------------------- | -------- |
-| y[1, 2]?    | Float  |                                                                        | The position relative to the Y-axis                  | True     |
-| z[1, 2]?    | Float  |                                                                        | The position relative to the Z-axis                  | True     |
-| refx[1, 2]? | String | A built-in profile which applies for refx                              | A reference to the X-axis, which stairs are based on | True     |
-| refy[1, 2]? | String | A built-in profile which applies for refy or your defined profile name | A reference to the Y-axis, which stairs are based on | True     |
-| refz[1, 2]? | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis, which stairs are based on | True     |
+| Name        | Type   | Allowed values                                                           | Description                                          | Optional |
+| ----------- | ------ | ------------------------------------------------------------------------ | ---------------------------------------------------- | -------- |
+| y[1, 2]?    | Float  |                                                                          | The position relative to the Y-axis                  | True     |
+| z[1, 2]?    | Float  |                                                                          | The position relative to the Z-axis                  | True     |
+| refx[1, 2]? | String | A built-in reference which applies for refx                              | A reference to the X-axis, which stairs are based on | True     |
+| refy[1, 2]? | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis, which stairs are based on | True     |
+| refz[1, 2]? | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis, which stairs are based on | True     |
 
 ## Sizing stairs
 

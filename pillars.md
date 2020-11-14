@@ -11,22 +11,22 @@ This section of the documentation contains things, that can't be described using
 
 ## Positioning pillars
 
-| Name        | Type   | Allowed values                                                         | Description                                                                    | Optional |
-| ----------- | ------ | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------ | -------- |
-| y[1, 2]     | Float  |                                                                        | The position relative to the Y-axis                                            | True     |
-| breflz      | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis from the bottom left side, which pillar is based on  | True     |
-| brefrz      | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis from the bottom right side, which pillar is based on | True     |
-| brefy       | String | A built-in profile which applies for refy or your defined profile name | A reference to the Y-axis from the bottom side, which pillar is based on       | True     |
-| brefz       | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis from the bottom side, which pillar is based on       | True     |
-| reflz       | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis from the left side, which pillar is based on         | True     |
-| refrz       | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis from the right side, which pillar is based on        | True     |
-| refx[1, 2]? | String | A built-in profile which applies for refx                              | A reference to the X-axis, which pillar is based on                            | True     |
-| refy        | String | A built-in profile which applies for refy or your defined profile name | A reference to the Y-axis, which pillar is based on                            | True     |
-| refz        | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis, which pillar is based on                            | True     |
-| treflz      | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis from the top left side, which pillar is based on     | True     |
-| trefrz      | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis from the top right side, which pillar is based on    | True     |
-| trefy       | String | A built-in profile which applies for refy or your defined profile name | A reference to the Y-axis from the top side, which pillar is based on          | True     |
-| trefz       | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis from the top side, which pillar is based on          | True     |
+| Name        | Type   | Allowed values                                                           | Description                                                                    | Optional |
+| ----------- | ------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | -------- |
+| y[1, 2]     | Float  |                                                                          | The position relative to the Y-axis                                            | True     |
+| breflz      | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the bottom left side, which pillar is based on  | True     |
+| brefrz      | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the bottom right side, which pillar is based on | True     |
+| brefy       | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis from the bottom side, which pillar is based on       | True     |
+| brefz       | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the bottom side, which pillar is based on       | True     |
+| reflz       | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the left side, which pillar is based on         | True     |
+| refrz       | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the right side, which pillar is based on        | True     |
+| refx[1, 2]? | String | A built-in reference which applies for refx                              | A reference to the X-axis, which pillar is based on                            | True     |
+| refy        | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis, which pillar is based on                            | True     |
+| refz        | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis, which pillar is based on                            | True     |
+| treflz      | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the top left side, which pillar is based on     | True     |
+| trefrz      | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the top right side, which pillar is based on    | True     |
+| trefy       | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis from the top side, which pillar is based on          | True     |
+| trefz       | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the top side, which pillar is based on          | True     |
 
 ::: tip
 If you are a beginner you don't have to use all these refs. The most basic are enough - refx or refx1 and refx2, refy and refz.

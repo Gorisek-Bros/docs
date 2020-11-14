@@ -49,7 +49,7 @@ There are two required profiles that you have to define by yourself, without the
 
 ## Built-in profiles
 
-DSJ4 already includes some predefined profiles, that can be used to create basic constructions.
+DSJ4 already includes some predefined profiles (it's better to name them as references), that can be used to create basic constructions.
 
 | Name        | Placement                      | Applies for |
 | ----------- | ------------------------------ | ----------- |
