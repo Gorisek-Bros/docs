@@ -11,15 +11,15 @@ This section of the documentation contains things, that can't be described using
 
 ## Positioning railings
 
-| Name        | Type   | Allowed values                                                         | Description                                                                 | Optional |
-| ----------- | ------ | ---------------------------------------------------------------------- | --------------------------------------------------------------------------- | -------- |
-| y[1, 2]     | Float  |                                                                        | The position relative to the Y-axis                                         | True     |
-| z[1, 2]     | Float  |                                                                        | The position relative to the Z-axis                                         | True     |
-| refx[1, 2]? | String | A built-in profile which applies for refx                              | A reference to the X-axis, which railings are based on                      | True     |
-| refy        | String | A built-in profile which applies for refy or your defined profile name | A reference to the Y-axis, which railings are based on                      | True     |
-| refz        | String | A built-in profile which applies for refz or your defined profile name | A reference to the Z-axis, which railings are based on                      | True     |
-| brefy       | String | A built-in profile which applies for refy or your defined profile name | A reference to the Y-axis from the bottom side, which railings are based on | True     |
-| trefy       | String | A built-in profile which applies for refy or your defined profile name | A reference to the Y-axis from the top side, which railings are based on    | True     |
+| Name        | Type   | Allowed values                                                           | Description                                                                 | Optional |
+| ----------- | ------ | ------------------------------------------------------------------------ | --------------------------------------------------------------------------- | -------- |
+| y[1, 2]     | Float  |                                                                          | The position relative to the Y-axis                                         | True     |
+| z[1, 2]     | Float  |                                                                          | The position relative to the Z-axis                                         | True     |
+| refx[1, 2]? | String | A built-in reference which applies for refx                              | A reference to the X-axis, which railings are based on                      | True     |
+| refy        | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis, which railings are based on                      | True     |
+| refz        | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis, which railings are based on                      | True     |
+| brefy       | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis from the bottom side, which railings are based on | True     |
+| trefy       | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis from the top side, which railings are based on    | True     |
 
 ## Sizing railings
 
