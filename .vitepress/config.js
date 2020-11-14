@@ -51,6 +51,10 @@ module.exports = {
           { link: "/general/introduction", text: "Introduction" },
           { link: "/general/faq", text: "FAQ" },
           { link: "/general/basics", text: "Basics" },
+          {
+            link: "/general/textures-and-materials",
+            text: "Textures and materials"
+          },
           { link: "/general/tutorial", text: "Tutorial" },
           { link: "/general/missing", text: "Missing attributes" }
         ]
