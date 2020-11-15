@@ -15,7 +15,7 @@ Go to the Documents folder, find Deluxe Ski Jump 4 folder, then go to Custom Hil
 Custom hills file naming schema is following: \<hill-name\>-HS\<hs\>-\<country\>.xml
 :::
 
-Open this file in the text editor, paste the following content, and save the file. This XML code already contains everything you need to create a custom hill - location, weather, inrun and hill profile, etc. No hill constructions are included yet. Also, gate numbers were omitted.
+Open this file in the text editor, paste the following content (taken from the Example section), and save the file. This XML code already contains everything you need to create a custom hill - location, weather, inrun and hill profile, etc. No hill constructions are included yet. Also, gate numbers were omitted.
 
 ``` xml
 <hill version="DSJ4-1.7.0">
