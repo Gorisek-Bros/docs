@@ -5,6 +5,10 @@
 Parent element name: inrun\
 Element name: startgate
 
+::: tip
+For finding optimal gates for your hill, use this [simple tool.](https://dsj24.pl/wind.html)
+:::
+
 | Attribute  | Type                       | Default value | Description                                                                              |
 | ---------- | -------------------------- | ------------- | ---------------------------------------------------------------------------------------- |
 | default    | +Integer                   |               | Default gate in wind 0.0 m/s                                                             |
