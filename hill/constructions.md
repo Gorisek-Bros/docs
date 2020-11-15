@@ -27,20 +27,16 @@ When setting the h attribute value, you have to have a specified sign of value. 
 
 ## Lights
 
-There are two ways to define lights. You can have them at downhill, but also at inrun - then they are looking like an oblong line.
+Parent element name: dhill\
+Element name: lights
 
 ::: tip
 You can have multiple lights instances.
 :::
 
 ::: warning
-Downhill lights height is hardcoded, it's value is equal to 40 meters.
+Downhill lights height is hardcoded, its value is equal to 40 meters.
 :::
-
-## Downhill lights
-
-Parent element name: dhill\
-Element name: lights
 
 | Attribute | Type                       | Allowed values                                        | Default value | Description                           |
 | --------- | -------------------------- | ----------------------------------------------------- | ------------- | ------------------------------------- |
@@ -55,27 +51,6 @@ Element name: lights
 | range     | Float                      |                                                       |               | Lights range                          |
 | side      | String                     | left, right                                           |               | Placement in terms of downhill side   |
 | [t, m, c] | [Texture, Material, Color] |                                                       |               | Lamp pole texture, material and color |
-
-### Inrun lights
-
-Parent element name: inrun\
-Element name: lights
-
-| Name        | Type    | Allowed values                                                           | Default value | Description                                           | Optional |
-| ----------- | ------- | ------------------------------------------------------------------------ | ------------- | ----------------------------------------------------- | -------- |
-| refx[1, 2]? | String  | A built-in reference which applies for refx                              | inrun         | A reference to the X-axis, which lights are based on  | True     |
-| refy        | String  | A built-in reference which applies for refy or your defined profile name | inrun-top     | A reference to the Y-axis, which lights are based on  | True     |
-| refz        | String  | A built-in reference which applies for refz or your defined profile name |               | A reference to the Z-axis, which lights are based on  |          |
-| x1          | Float   |                                                                          | 0             | The starting point in position relative to the X-axis | True     |
-| x2          | Float   |                                                                          | 100           | The ending point in position relative to the X-axis   | True     |
-| step        | +Float  |                                                                          |               | Step between lamps                                    |          |
-| h           | Float   |                                                                          | 0.0           | The position relative to the Y-axis                   | True     |
-| d           | Float   |                                                                          | 0.1           | The position relative to the Z-axis                   | True     |
-| l           | Float   |                                                                          |               | Light length                                          |          |
-| [r, g, b]   | +Float  | <0.0; 1.0>                                                               |               | Light color                                           |          |
-| attn        | Float   |                                                                          |               | Lights attenuation                                    |          |
-| range       | Float   |                                                                          |               | Lights range                                          |          |
-| day         | Boolean |                                                                          | true          | Toggles lights visibility during a day                | True     |
 
 ## Wind flags
 

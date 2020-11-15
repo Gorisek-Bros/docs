@@ -97,6 +97,10 @@ module.exports = {
             text: "Twigs"
           },
           {
+            link: "/inrun/lights",
+            text: "Lights"
+          },
+          {
             link: "/inrun/gates",
             text: "Gates"
           },
