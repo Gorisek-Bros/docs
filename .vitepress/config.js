@@ -50,7 +50,7 @@ module.exports = {
         children: [
           { link: "/general/introduction", text: "Introduction" },
           { link: "/general/faq", text: "FAQ" },
-          { link: "/general/basics", text: "Basics" },
+          { link: "/general/coordinates", text: "Coordinates" },
           {
             link: "/general/textures-and-materials",
             text: "Textures and materials"
