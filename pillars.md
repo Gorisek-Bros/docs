@@ -84,19 +84,19 @@ If steps between the next pillars are the same, you can use the step and count a
 ## Texturing pillars
 
 ::: tip
-Use normal type attribute if you are using opaque texture. Otherwise, use blend type.
+Use normal type attribute if you are using opaque texture. When using textures with alpha channels such as grid.png, use blend type. In case of transparent textures, use glass type.
 :::
 
 ::: tip
-If you have two surfaces that are overlapping each other, specify the zbias attribute, so this surface will appear "above" the second surface
+If you have two surfaces that are overlapping each other, specify the zbias attribute, so this surface will appear "above" the second surface.
 :::
 
-| Name      | Type                       | Allowed values | Description                 | Optional |
-| --------- | -------------------------- | -------------- | --------------------------- | -------- |
-| [t, m, c] | [Texture, Material, Color] |                | Texture, material and color |          |
-| scale     | Float                      |                | Texture scaling factor      | True     |
-| type      | String                     | normal, blend  | Texture type                | True     |
-| zbias     | +Integer                   |                | Z-index                     | True     |
+| Name      | Type                       | Allowed values       | Description                 | Optional |
+| --------- | -------------------------- | -------------------- | --------------------------- | -------- |
+| [t, m, c] | [Texture, Material, Color] |                      | Texture, material and color |          |
+| scale     | Float                      |                      | Texture scaling factor      | True     |
+| type      | String                     | normal, blend, glass | Texture type                | True     |
+| zbias     | +Integer                   |                      | Z-index                     | True     |
 
 ## Code snippets
 
