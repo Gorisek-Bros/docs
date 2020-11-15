@@ -8,7 +8,7 @@ Element name: profile
 :::
 
 ::: warning
-rl is a deprecated, but required attribute.
+rl is a deprecated, but required attribute. It means that this attribute doesn't do anything, however you still need to define its value.
 :::
 
 | Attribute | Type     | Allowed Values | Description                                                                                                                                               | Optional |
