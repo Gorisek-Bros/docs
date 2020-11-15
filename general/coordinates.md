@@ -1,6 +1,4 @@
-# Basics
-
-## Coordinates
+# Coordinates
 
 To understand how elements can be placed and how profiles work, knowledge of the way DSJ4 coordinates is needed.
 
