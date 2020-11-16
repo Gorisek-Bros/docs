@@ -3,7 +3,7 @@
 Parent element name: hill\
 Element name: profile
 
-A profile is a continuous function that can be described as an X(Y) (when uses as refy) or X(Z) (when used as refy) function where both X and Y are axes. They are the most important point when creating custom hill constructions. They allow the creation of such buildings as wind grids, towers, and more advanced things.
+A profile is a continuous function that can be described as an Y(X) (when used as refy) or Z(X) (when used as refy) function where both X and Y are axes. They are the most important point when creating custom hill constructions. They allow the creation of such buildings as wind grids, towers, and more advanced things.
 
 ::: tip
 This section of the documentation contains things, that can't be described using only words. The best way to test the parameters described below is to use elements from already existing hills and play with them.
