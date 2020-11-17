@@ -69,10 +69,10 @@ The stepper attribute can't be described using only words, as it includes advanc
 
 ### Rendering beamgroups
 
-| Name  | Type    | Description                      | Optional |
-| ----- | ------- | -------------------------------- | -------- |
-| first | Boolean | Toggles rendering the first beam | True     |
-| last  | Boolean | Toggles rendering the last beam  | True     |
+| Name  | Type    | Description                                   | Optional |
+| ----- | ------- | --------------------------------------------- | -------- |
+| first | Boolean | Toggles rendering the first beam in beamgroup | True     |
+| last  | Boolean | Toggles rendering the last beam in beamgroup  | True     |
 
 ### Positioning beamgroups
 
