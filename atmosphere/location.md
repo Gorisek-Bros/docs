@@ -11,7 +11,7 @@ Some attributes may behave unexpectedly:
 
 | Attribute   | Type     | Allowed values  | Default value | Description                             |
 | ----------- | -------- | --------------- | ------------- | --------------------------------------- |
-| lattitude   | Float    | <-90.0; 90.0>   | 0.0           | Lattitude                               |
+| latitude    | Float    | <-90.0; 90.0>   | 0.0           | Latitude                                |
 | longitude   | Float    | <-180.0; 180.0> | 0.0           | Longitude                               |
 | orientation | +Integer | <0; 360>        | 0.0           | Terrain rotation in regard to the Earth |
 | timezone    | Integer  | <-12; 12>       | 0.0           | Time zone                               |
