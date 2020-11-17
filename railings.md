@@ -49,6 +49,10 @@ Manipulating the length of railings in DSJ4 is based on manipulating x1 and x2 a
 ## Texturing railings
 
 ::: tip
+Use normal type attribute if you are using opaque texture. When using textures with alpha channels such as grid.png, use blend type. In case of transparent textures, use glass type.
+:::
+
+::: tip
 If you have two surfaces that are overlapping each other, specify the zbias attribute, so this surface will appear "above" the second surface
 :::
 
