@@ -93,4 +93,4 @@ Notice possible attribute names at refx[1, 2]?. They can be refx OR refx1 and re
 
 ## Contributing
 
-Everyone is welcomed to contribute to the documentation! Source code is available [here](https://github.com/Mensix/gorisekdocs). You can send your issues or pull requests. In case you don't have that much programming knowledge, you can contact the documentation maintainer using [Facebook](https://facebook.com/grzegorz.perun/) or [GitHub](https://github.com/Mensix/).
+Everyone is welcomed to contribute to the documentation! Source code is available [here](https://github.com/Gorisek-Bros/docs). You can send your issues or pull requests. In case you don't have that much programming knowledge, you can contact the documentation maintainer using [Facebook](https://facebook.com/grzegorz.perun/) or [GitHub](https://github.com/Mensix/).
