@@ -4,11 +4,11 @@ Working repository.
 
 ## Developing
 
-Clone this repository, navigate to the output folder, and run `npx vitepress`.
+Clone this repository, navigate to the output folder, install development tools running `npm ci` (just once) and then run `npm start`.
 
 ## Building
 
-Run `npx vitepress build`.
+Run `npm build`.
 
 ## Contributing
 
