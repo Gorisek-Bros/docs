@@ -4,12 +4,14 @@ Parent element name: dhill\
 Element name: profile
 
 ::: tip
- Many definitions below are taken from [Jumping Hills Construction Norm 2018](https://assets.fis-ski.com/image/upload/v1592381507/fis-prod/assets/Construction-Norm_2018-2.pdf) which is an official FIS document regarding ski jumping hills homologations.
+ Many definitions and the image below are taken from [Jumping Hills Construction Norm 2018](https://assets.fis-ski.com/image/upload/v1592381507/fis-prod/assets/Construction-Norm_2018-2.pdf) which is an official FIS document regarding ski jumping hills homologations.
 :::
 
 ::: warning
 rl is a deprecated, but required attribute. It means that this attribute doesn't do anything, however you still need to define its value.
 :::
+
+![1](/hill.jpg)
 
 | Attribute | Type     | Allowed Values | Description                                                                                                                                               | Optional |
 | --------- | -------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
