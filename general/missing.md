@@ -13,7 +13,6 @@ For example
 
 ## profile
 
-* maxstep
 * maxturn
 
 ### start

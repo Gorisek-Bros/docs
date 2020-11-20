@@ -13,10 +13,15 @@ This section of the documentation contains things, that can't be described using
 
 The root element of the profile is the profile. It takes two attributes.
 
-| Name | Type   | Allowed values | Description                | Optional |
-| ---- | ------ | -------------- | -------------------------- | -------- |
-| id   | String |                | A profile name             |          |
-| side | String | left, right    | Placement in terms of refx | True     |
+::: tip
+It's not usually required to adjust the maxstep. One of cases when you can adjust it might be better looking spot lights.
+:::
+
+| Name    | Type     | Allowed values | Description                         | Optional |
+| ------- | -------- | -------------- | ----------------------------------- | -------- |
+| id      | String   |                | A profile name                      |          |
+| side    | String   | left, right    | Placement in terms of refx          | True     |
+| maxstep | +Integer | 1000           | A profile linear points split count | True     |
 
 ## Children elements
 
