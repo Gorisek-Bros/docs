@@ -27,11 +27,12 @@ The beam is a bollard. It's ideal to create for example simple handrail. Many be
 
 ### Controlling sides
 
-| Name   | Type     | Description            | Optional |
-| ------ | -------- | ---------------------- | -------- |
-| edges  | +Integer | Edges count            |          |
-| smooth | Boolean  | Toggles smooth sides   | True     |
-| rect   | Boolean  | Toggles a cuboid shape | True     |
+| Name      | Type     | Description                            | Optional |
+| --------- | -------- | -------------------------------------- | -------- |
+| edges     | +Integer | Edges count                            |          |
+| smooth    | Boolean  | Toggles smooth sides                   | True     |
+| rect      | Boolean  | Toggles a cuboid shape                 | True     |
+| end[1, 2] | Boolean  | Toggles rendering full shapes of beams | True     |
 
 ### Texturing beams
 
@@ -69,10 +70,11 @@ The stepper attribute can't be described using only words, as it includes advanc
 
 ### Rendering beamgroups
 
-| Name  | Type    | Description                                   | Optional |
-| ----- | ------- | --------------------------------------------- | -------- |
-| first | Boolean | Toggles rendering the first beam in beamgroup | True     |
-| last  | Boolean | Toggles rendering the last beam in beamgroup  | True     |
+| Name      | Type    | Description                                   | Optional |
+| --------- | ------- | --------------------------------------------- | -------- |
+| first     | Boolean | Toggles rendering the first beam in beamgroup | True     |
+| last      | Boolean | Toggles rendering the last beam in beamgroup  | True     |
+| end[1, 2] | Boolean | Toggles rendering full shapes of beams        | True     |
 
 ### Positioning beamgroups
 

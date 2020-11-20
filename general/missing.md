@@ -28,7 +28,6 @@ If you know any usage of attributes below, contact the documenation maintainer.
 
 ## profile
 
-* maxstep
 * maxturn
 
 ### start
@@ -85,14 +84,12 @@ If you know any usage of attributes below, contact the documenation maintainer.
 * nz[1, 2]?
 * r[1, 2]?[b]?
 * side
-* end[1, 2]
 * n_[x, y, z]
 * invert
 
 ## beamgroup
 
 * [d, n][x, y, z][1, 2]?
-* end[1, 2]
 * n_[x, y, z]
 
 ## inrun
