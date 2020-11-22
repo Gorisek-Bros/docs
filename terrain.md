@@ -22,6 +22,10 @@ Element name: profile
 For further profiles explanation, go to the Profile section.
 :::
 
+::: warning
+These profiles must be placed before the terrain element in order to work.
+:::
+
 You can adjust terrain using two built-in profiles. There is no need to include any refx either refy.
 
 | Name          | Placement        |
