@@ -56,6 +56,7 @@ module.exports = {
             text: "Textures and materials"
           },
           { link: "/general/tutorial", text: "Tutorial" },
+          { link: "/general/tutorial-advanced", text: "Advanced tutorial" },
           { link: "/general/missing", text: "Missing attributes" }
         ]
       },
