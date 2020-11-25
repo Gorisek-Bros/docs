@@ -76,13 +76,13 @@ It would be nice to widen the right side of the stairs so that players have the 
 So add a RAILING that will start at beginning and end at coordinates 20
 
 ```xml
-    <railing t="Textures\concrete1.png" y="-1.02" c="0xcbd3d6" m="Materials\material1.xml" h="1" refx="inrun" w="2.0" z="2.5" x2="21"/>
+<railing t="Textures\concrete1.png" y="-1.02" c="0xcbd3d6" m="Materials\material1.xml" h="1" refx="inrun" w="2.0" z="2.5" x2="21"/>
 ```
 
 And also add stairs that will be longer than those on the left side
 
 ```xml
-    <stairs refx="inrun" lz="3.4" s="0.5" rz="1.2" c2="0xe8ebea" m2="Materials\material1.xml" t2="Textures\concrete1.png" c1="0xf2e5c7" m1="Materials\material1.xml" t1="Textures\rubbermat.png" x1="0" x2="20" />
+<stairs refx="inrun" lz="3.4" s="0.5" rz="1.2" c2="0xe8ebea" m2="Materials\material1.xml" t2="Textures\concrete1.png" c1="0xf2e5c7" m1="Materials\material1.xml" t1="Textures\rubbermat.png" x1="0" x2="20" />
 ```
 
 ![12](/tutorial12.png)
@@ -92,27 +92,27 @@ And also add stairs that will be longer than those on the left side
 First we will do the left side of the inrun.
 
 ```xml
-    <beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" x1="0" x2="-2" z="-1.95" step="2" stepper="1" dy1="-0.1" dy2="0.6" r="0.025" edges="8" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" x1="0" x2="-2" z="-1.95" step="2" stepper="1" dy1="-0.1" dy2="0.6" r="0.025" edges="8" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
 
-	<railing refx1="inrun" refx2="dhill" refy="inrun-top" w="0.05" x1="0" x2="-2" z="-1.95" y="0.6" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
+<railing refx1="inrun" refx2="dhill" refy="inrun-top" w="0.05" x1="0" x2="-2" z="-1.95" y="0.6" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
 
-	<railing refx1="inrun" refx2="dhill" refy="inrun-top" w="0.05" x1="0" x2="-2" z="-1.95" y="0.3" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
+<railing refx1="inrun" refx2="dhill" refy="inrun-top" w="0.05" x1="0" x2="-2" z="-1.95" y="0.3" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
 ```
 
 Now we will do the right side.
 
 ```xml
-    <beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" x1="22" x2="-2" z="1.95" step="2" stepper="1" dy1="-0.1" dy2="0.6" r="0.025" edges="8" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" x1="22" x2="-2" z="1.95" step="2" stepper="1" dy1="-0.1" dy2="0.6" r="0.025" edges="8" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
 
-	<railing refx1="inrun" refx2="dhill" refy="inrun-top" w="0.05" x1="22" x2="-2" z="1.95" y="0.6" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
+<railing refx1="inrun" refx2="dhill" refy="inrun-top" w="0.05" x1="22" x2="-2" z="1.95" y="0.6" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
 
-	<railing refx1="inrun" refx2="dhill" refy="inrun-top" w="0.05" x1="22" x2="-2" z="1.95" y="0.3" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
+<railing refx1="inrun" refx2="dhill" refy="inrun-top" w="0.05" x1="22" x2="-2" z="1.95" y="0.3" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
 
-	<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" x1="0" x2="20.5" z="3.45" step="2" stepper="1" dy1="-0.1" dy2="0.6" r="0.025" edges="8" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
+<beamgroup refx1="inrun" refx2="inrun" refy="inrun-top" x1="0" x2="20.5" z="3.45" step="2" stepper="1" dy1="-0.1" dy2="0.6" r="0.025" edges="8" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
 
-	<railing refx1="inrun" refx2="inrun" refy="inrun-top" w="0.05" x1="0" x2="20.5" z="3.45" y="0.6" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
+<railing refx1="inrun" refx2="inrun" refy="inrun-top" w="0.05" x1="0" x2="20.5" z="3.45" y="0.6" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
 
-	<railing refx1="inrun" refx2="inrun" refy="inrun-top" w="0.05" x1="0" x2="20.5" z="3.45" y="0.3" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
+<railing refx1="inrun" refx2="inrun" refy="inrun-top" w="0.05" x1="0" x2="20.5" z="3.45" y="0.3" h="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3"/>
 ```
 
 ![13](/tutorial13.png)
@@ -124,25 +124,25 @@ Read about beamgroups [here](https://docs.dsj24.pl/beams.html#texturing-beams "B
 Add the code below to your script but remember to put it above the TERRAIN profile.
 
 ```xml
-    <profile id="dhill-terrain">
-        <start x="0" y="-1.3"/>
-        <line x="8" y="-1.8"/>
-        <line x="14" y="-2"/>
-        <line x="40" y="-1.5"/>
-        <line x="50" y="-0.1"/>
-        <line x="67" y="-0.1"/>
-        <line x="67.1" y="0"/>
-    </profile>
+<profile id="dhill-terrain">
+    <start x="0" y="-1.3"/>
+    <line x="8" y="-1.8"/>
+    <line x="14" y="-2"/>
+    <line x="40" y="-1.5"/>
+    <line x="50" y="-0.1"/>
+    <line x="67" y="-0.1"/>
+    <line x="67.1" y="0"/>
+</profile>
 ```
 
 Now add the base and some supports for the dhill
 
 ```xml
-    <pillar refx1="dhill" refx2="dhill" x1="0" x2="45" reflz="dhill-left" refrz="dhill-right" lz="0" rz="0" trefy="dhill-top" brefy="dhill-top" ty="0" by="-0.2" t="Textures\concrete3.png" m="Materials\material1.xml" c="0xfaf7f2" scale="0.8" top="false"/>
+<pillar refx1="dhill" refx2="dhill" x1="0" x2="45" reflz="dhill-left" refrz="dhill-right" lz="0" rz="0" trefy="dhill-top" brefy="dhill-top" ty="0" by="-0.2" t="Textures\concrete3.png" m="Materials\material1.xml" c="0xfaf7f2" scale="0.8" top="false"/>
 
-    <pillar refx1="dhill" count="9" step="5" refx2="dhill" x1="2.55" x2="2.8" lz="4.1" rz="3.8" trefy="dhill-top" brefy="terrain" ty="-0.4" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xfaf7f2" bottom="false" />
+<pillar refx1="dhill" count="9" step="5" refx2="dhill" x1="2.55" x2="2.8" lz="4.1" rz="3.8" trefy="dhill-top" brefy="terrain" ty="-0.4" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xfaf7f2" bottom="false" />
 
-    <pillar refx1="dhill" count="9" step="5" refx2="dhill" x1="2.55" x2="2.8" lz="-3.8" rz="-4.1" trefy="dhill-top" brefy="terrain" ty="-0.4" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xfaf7f2" bottom="false" />
+<pillar refx1="dhill" count="9" step="5" refx2="dhill" x1="2.55" x2="2.8" lz="-3.8" rz="-4.1" trefy="dhill-top" brefy="terrain" ty="-0.4" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xfaf7f2" bottom="false" />
 ```
 
 ![14](/tutorial14.png)
@@ -154,9 +154,9 @@ Read about pillars [here](https://docs.dsj24.pl/pillars.html "Pillars").
 Add beam groups to support the inrun
 
 ``` xml
-    <beamgroup refx="inrun" refx2="dhill" refy="inrun-top" end2="true" rect="true" x1="12.1" x2="-14.1" z="0" step="22" stepper="1" fitstep="true" dy1="-1" dy2="-20" r="1" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xededed" />
+<beamgroup refx="inrun" refx2="dhill" refy="inrun-top" end2="true" rect="true" x1="12.1" x2="-14.1" z="0" step="22" stepper="1" fitstep="true" dy1="-1" dy2="-20" r="1" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xededed" />
 
-    <beamgroup refx="inrun" refx2="dhill" refy="inrun-top" end2="true" rect="true" x1="12.7" x2="-13.5" z="0" step="22" stepper="1" fitstep="true" dy1="-1" dy2="-20" r="0.7" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xb5b5b5" />
+<beamgroup refx="inrun" refx2="dhill" refy="inrun-top" end2="true" rect="true" x1="12.7" x2="-13.5" z="0" step="22" stepper="1" fitstep="true" dy1="-1" dy2="-20" r="0.7" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0xb5b5b5" />
 ```
 
 ![15](/tutorial15.png)
@@ -166,9 +166,9 @@ Add beam groups to support the inrun
 To add lights you need to define the refyz property
 
 ``` xml
-    <lights refx="inrun" refz="inrun-right" x1="3.7" x2="84.2" step="1.08" l="1.0" h="0.6" d="-0.7" r="0.2" g="0.18" b="0.16" attn="0.5" range="35.0" />
+<lights refx="inrun" refz="inrun-right" x1="3.7" x2="84.2" step="1.08" l="1.0" h="0.6" d="-0.7" r="0.2" g="0.18" b="0.16" attn="0.5" range="35.0" />
 
-	<lights refx="inrun" refz="inrun-left" x1="3.7" x2="20.2" step="1.08" l="1.0" h="0.6" d="-2.22 " r="0.2" g="0.18" b="0.16" attn="0.1" range="45.0" />
+<lights refx="inrun" refz="inrun-left" x1="3.7" x2="20.2" step="1.08" l="1.0" h="0.6" d="-2.22 " r="0.2" g="0.18" b="0.16" attn="0.1" range="45.0" />
 ```
 
 ![16](/tutorial16.png)
@@ -180,9 +180,9 @@ Read about lights [here](https://docs.dsj24.pl/inrun/lights.html "Lights").
 Add a simple building similar to the one in Einsedeln
 
 ``` xml
-    <pillar refx="inrun" x1="-4" x2="0" lz="2" rz="-2" trefy="inrun-top" brefy="terrain" ty="5" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3" bottom="false" />
+<pillar refx="inrun" x1="-4" x2="0" lz="2" rz="-2" trefy="inrun-top" brefy="terrain" ty="5" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3" bottom="false" />
 
-	<pillar refx="inrun" x1="-3" x2="0.1" lz="2.1" rz="-2.1" trefy="inrun-top" brefy="inrun-top" ty="4" by="1" t="Textures\metal.png" m="Materials\material1.xml" c="0x737373" />
+<pillar refx="inrun" x1="-3" x2="0.1" lz="2.1" rz="-2.1" trefy="inrun-top" brefy="inrun-top" ty="4" by="1" t="Textures\metal.png" m="Materials\material1.xml" c="0x737373" />
 ```
 
 ![17](/tutorial17.png)
@@ -291,5 +291,7 @@ Add a simple building similar to the one in Einsedeln
 	<pillar refx="inrun" x1="-3" x2="0.1" lz="2.1" rz="-2.1" trefy="inrun-top" brefy="inrun-top" ty="4" by="1" t="Textures\metal.png" m="Materials\material1.xml" c="0x737373" />
 </hill>
 ```
+
+Made by iSeb
 
 
