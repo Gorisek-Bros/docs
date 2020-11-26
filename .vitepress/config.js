@@ -50,16 +50,13 @@ module.exports = {
         children: [
           { link: "/general/introduction", text: "Introduction" },
           { link: "/general/faq", text: "FAQ" },
-          { link: "/general/coordinates", text: "Coordinates" },
+          { link: "/general/basics", text: "Basics" },
           {
             link: "/general/textures-and-materials",
             text: "Textures and materials"
           },
-          {
-            link: "/general/example",
-            text: "Example"
-          },
           { link: "/general/tutorial", text: "Tutorial" },
+          { link: "/general/tutorial-advanced", text: "Advanced tutorial" },
           { link: "/general/missing", text: "Missing attributes" }
         ]
       },
@@ -101,10 +98,6 @@ module.exports = {
             text: "Twigs"
           },
           {
-            link: "/inrun/lights",
-            text: "Lights"
-          },
-          {
             link: "/inrun/gates",
             text: "Gates"
           },
@@ -143,8 +136,8 @@ module.exports = {
             text: "Trees"
           },
           {
-            link: "/terrain/blocks-and-houses",
-            text: "Blocks and houses"
+            link: "/terrain/blocks",
+            text: "Blocks"
           },
           {
             link: "/terrain/audience",
