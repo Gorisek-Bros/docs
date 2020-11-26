@@ -274,3 +274,5 @@ Now we are going to add a simple building like in Einsiedeln hill.
     <pillar refx="inrun" x1="-3" x2="0.1" lz="2.1" rz="-2.1" trefy="inrun-top" brefy="inrun-top" ty="4" by="1" t="Textures\metal.png" m="Materials\material1.xml" c="0x737373" />
 </hill>
 ```
+
+Made by iSeb.
