@@ -172,6 +172,10 @@ module.exports = {
       {
         text: "Beams and beamgroups",
         link: "/beams"
+      },
+      {
+        text: "3D Model",
+        link: "/3dmodel"
       }
     ]
   }
