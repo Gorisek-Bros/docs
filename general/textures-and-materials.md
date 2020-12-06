@@ -82,58 +82,61 @@ rubbermat.png
 ![25](/textures/rust1.png)\
 rust1.png
 
-![26](/textures/stone1.jpg)\
+![26](/textures/snow.png)\
+snow.png
+
+![27](/textures/stone1.jpg)\
 stone1.jpg
 
-![27](/textures/tiles1.png)\
+![28](/textures/tiles1.png)\
 tiles1.png
 
-![28](/textures/tiles2.png)\
+![29](/textures/tiles2.png)\
 tiles2.png
 
-![29](/textures/tiles3.png)\
+![30](/textures/tiles3.png)\
 tiles3.png
 
-![30](/textures/vertical-wires.png)\
+![31](/textures/vertical-wires.png)\
 vertical-wires.png
 
-![31](/textures/window.png)\
+![32](/textures/window.png)\
 window.png
 
-![32](/textures/wood1.png)\
+![33](/textures/wood1.png)\
 wood1.png
 
-![33](/textures/wood1b.png)\
+![34](/textures/wood1b.png)\
 wood1b.png
 
-![34](/textures/wood2.png)\
+![35](/textures/wood2.png)\
 wood2.png
 
-![35](/textures/wood2b.png)\
+![36](/textures/wood2b.png)\
 wood2b.png
 
-![36](/textures/wood3.png)\
+![37](/textures/wood3.png)\
 wood3.png
 
-![37](/textures/wood3b.png)\
+![38](/textures/wood3b.png)\
 wood3b.png
 
-![38](/textures/wood4.png)\
+![39](/textures/wood4.png)\
 wood4.png
 
-![39](/textures/wood4b.png)\
+![40](/textures/wood4b.png)\
 wood4b.png
 
-![40](/textures/wood5.png)\
+![41](/textures/wood5.png)\
 wood5.png
 
-![41](/textures/wood5b.png)\
+![42](/textures/wood5b.png)\
 wood5b.png
 
-![42](/textures/wood6.png)\
+![43](/textures/wood6.png)\
 wood6.png
 
-![43](/textures/wood7.png)\
+![44](/textures/wood7.png)\
 wood7.png
 ## Materials
 
