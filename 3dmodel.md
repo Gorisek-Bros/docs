@@ -173,7 +173,7 @@ Element name: 3dmodel-instance
 | refy      | String |               | A reference to the Y-axis, which 3dmodel is based on |
 | refz      | String |               | A reference to the Z-axis, which 3dmodel is based on |
 
-### Code snippets
+## Code snippets
 
 ```xml
 <hill version="DSJ4-1.7.0">
