@@ -7,43 +7,49 @@ module.exports = {
       "meta",
       {
         name: "description",
-        content: "The official DSJ4 Hills Engine documentation"
-      }
+        content: "The official DSJ4 Hills Engine documentation",
+      },
     ],
     [
       "meta",
-      { property: "og:title", content: "DSJ4 Hills Engine Documentation" }
+      { property: "og:title", content: "DSJ4 Hills Engine Documentation" },
     ],
     [
       "meta",
       {
         property: "og:description",
         content:
-          "The official DSJ4 Hills Engine Documentation, brought by Gorišek Bros."
-      }
+          "The official DSJ4 Hills Engine Documentation, brought by Gorišek Bros.",
+      },
     ],
     [
       "meta",
       {
         property: "og:image",
-        content: "/og_img.png"
-      }
+        content: "/og_img.png",
+      },
     ],
     [
       "script",
       {
         async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=G-EWHMDZ873D"
-      }
+        src: "https://www.googletagmanager.com/gtag/js?id=G-EWHMDZ873D",
+      },
     ],
     [
       "script",
       {
-        src: "/gtag.js"
-      }
-    ]
+        src: "/gtag.js",
+      },
+    ],
   ],
   themeConfig: {
+    repo: "Gorisek-Bros/docs",
+    editLinkText: "Edit this page on GitHub",
+    algolia: {
+      apiKey: "f2fd998a9414498269c1b082cee6c6fc",
+      indexName: "gorisekdocs",
+    },
     sidebar: [
       {
         text: "General",
@@ -53,12 +59,12 @@ module.exports = {
           { link: "/general/basics", text: "Basics" },
           {
             link: "/general/textures-and-materials",
-            text: "Textures and materials"
+            text: "Textures and materials",
           },
           { link: "/general/tutorial", text: "Tutorial" },
           { link: "/general/tutorial-advanced", text: "Advanced tutorial" },
-          { link: "/general/missing", text: "Missing attributes" }
-        ]
+          { link: "/general/missing", text: "Missing attributes" },
+        ],
       },
       {
         text: "Atmosphere",
@@ -66,117 +72,117 @@ module.exports = {
           { link: "/atmosphere/time", text: "Time" },
           {
             link: "/atmosphere/location",
-            text: "Location"
+            text: "Location",
           },
           {
             link: "/atmosphere/weather",
-            text: "Weather"
-          }
-        ]
+            text: "Weather",
+          },
+        ],
       },
       {
         text: "Inrun",
         children: [
           {
             link: "/inrun/track",
-            text: "Track"
+            text: "Track",
           },
           {
             link: "/inrun/profile",
-            text: "Profile"
+            text: "Profile",
           },
           {
             link: "/inrun/guardrail",
-            text: "Guardrail"
+            text: "Guardrail",
           },
           {
             link: "/inrun/frame",
-            text: "Frame"
+            text: "Frame",
           },
           {
             link: "/inrun/twigs",
-            text: "Twigs"
+            text: "Twigs",
           },
           {
             link: "/inrun/gates",
-            text: "Gates"
+            text: "Gates",
           },
           {
             link: "/inrun/flag",
-            text: "Flag"
-          }
-        ]
+            text: "Flag",
+          },
+        ],
       },
       {
         text: "Hill",
         children: [
           {
             link: "/hill/profile",
-            text: "Profile"
+            text: "Profile",
           },
           {
             link: "/hill/fence",
-            text: "Fence"
+            text: "Fence",
           },
           {
             link: "/hill/constructions",
-            text: "Constructions"
-          }
-        ]
+            text: "Constructions",
+          },
+        ],
       },
       {
         text: "Terrain",
         children: [
           {
             link: "/terrain",
-            text: "Terrain"
+            text: "Terrain",
           },
           {
             link: "/terrain/trees",
-            text: "Trees"
+            text: "Trees",
           },
           {
             link: "/terrain/blocks",
-            text: "Blocks"
+            text: "Blocks",
           },
           {
             link: "/terrain/audience",
-            text: "Audience"
-          }
-        ]
+            text: "Audience",
+          },
+        ],
       },
       {
         text: "Hill",
-        link: "/hill"
+        link: "/hill",
       },
       {
         text: "Refx",
-        link: "/refx"
+        link: "/refx",
       },
       {
         text: "Profile",
-        link: "/profile"
+        link: "/profile",
       },
       {
         text: "Stairs",
-        link: "/stairs"
+        link: "/stairs",
       },
       {
         text: "Railings",
-        link: "/railings"
+        link: "/railings",
       },
       {
         text: "Pillars",
-        link: "/pillars"
+        link: "/pillars",
       },
       {
         text: "Beams and beamgroups",
-        link: "/beams"
+        link: "/beams",
       },
       {
         text: "3D Model",
-        link: "/3dmodel"
-      }
-    ]
-  }
+        link: "/3dmodel",
+      },
+    ],
+  },
 };
