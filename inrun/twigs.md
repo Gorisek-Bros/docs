@@ -5,10 +5,6 @@ Element name: twigs
 
 ![1](/twigs.png)
 
-::: tip
-Optional element.
-:::
-
 | Attribute | Type   | Description                          |
 | --------- | ------ | ------------------------------------ |
 | lz        | +Float | Width on the left side of the inrun  |
