@@ -4,7 +4,7 @@ Parent element name: inrun\
 Element name: profile
 
 ::: tip
- Many definitions and the image below are taken from [Jumping Hills Construction Norm 2018](https://assets.fis-ski.com/image/upload/v1592381507/fis-prod/assets/Construction-Norm_2018-2.pdf) which is official a FIS document regarding ski jumping hills homologations.
+ Many definitions and the image below are taken from [Jumping Hills Construction Norm 2018](https://assets.fis-ski.com/image/upload/v1592381507/fis-prod/assets/Construction-Norm_2018-2.pdf) which is an official FIS document regarding ski jumping hills homologations.
 :::
 
 ![1](/hill.jpg)
