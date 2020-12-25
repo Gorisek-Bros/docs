@@ -61,18 +61,18 @@ Version attribute in the hill element equal to **DSJ4-1.5.0** or **DSJ4-1.7.0** 
 
 Next to the attribute name, you could notice the Type column. When writing your hill you have to be specific about attribute values types. The table below presents how to understand types.
 
-| Name     | Allowed values                                  | Description                  | Example                                   |
-| -------- | ----------------------------------------------- | ---------------------------- | ----------------------------------------- |
-| Integer  | (-inf; +inf)                                    | Integer                      | -100, 100                                 |
-| +Integer | <0; +inf)                                       | Natural numbers              | 100, 1000                                 |
-| Float    | (-inf; +inf)                                    | Numbers with digits          | -1.01, 1.01                               |
-| +Float   | <0.0; +inf)                                     | Positive numbers with digits | 1.01, 1000.01                             |
-| -Float   | (-inf; 0.0>                                     | Negative numbers with digits | -1000.01, -1.01                           |
-| String   |                                                 | Text                         | Mediamond, Vikersund                      |
-| Boolean  | true, false                                     | Truthy or falsy              | true, false                               |
-| Texture  | Textures\.*.png                                 | Texture in .png format       | Textures\metal.png, Textures\flag-aut.png |
-| Material | Materials\.*.xml                                | Material in .xml format      | Materials\wood.xml, Materials\metal.xml   |
-| Color    | 0x[000000 - FFFFFF][00 - FF], [000000 - FFFFFF] | Color in hexadecimal format  | 0x123456, 123456                          |
+| Name     | Allowed values               | Description                                    | Example                                   |
+| -------- | ---------------------------- | ---------------------------------------------- | ----------------------------------------- |
+| Integer  | (-inf; +inf)                 | Integer                                        | -100, 100                                 |
+| +Integer | <0; +inf)                    | Natural numbers                                | 100, 1000                                 |
+| Float    | (-inf; +inf)                 | Numbers with digits                            | -1.01, 1.01                               |
+| +Float   | <0.0; +inf)                  | Positive numbers with digits                   | 1.01, 1000.01                             |
+| -Float   | (-inf; 0.0>                  | Negative numbers with digits                   | -1000.01, -1.01                           |
+| String   |                              | Text                                           | Mediamond, Vikersund                      |
+| Boolean  | true, false                  | Truthy or falsy                                | true, false                               |
+| Texture  | Textures\.*.png              | Texture in .png format                         | Textures\metal.png, Textures\flag-aut.png |
+| Material | Materials\.*.xml             | Material in .xml format                        | Materials\wood.xml, Materials\metal.xml   |
+| Color    | 0x[000000 - FFFFFF][00 - FF] | Color in hexadecimal format with alpha channel | 0x123456FF                                |
 
 ## Additional notes
 
