@@ -141,8 +141,8 @@ module.exports = {
             text: "Trees",
           },
           {
-            link: "/terrain/blocks",
-            text: "Blocks",
+            link: "/terrain/blocks-and-houses",
+            text: "Blocks and houses",
           },
           {
             link: "/terrain/audience",
