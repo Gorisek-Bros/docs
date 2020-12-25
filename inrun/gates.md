@@ -14,8 +14,9 @@ For finding optimal gates for your hill, use this [simple tool.](https://dsj24.p
 | default    | +Integer                   |               | Default gate in wind 0.0 m/s                                                             |
 | min        | +Integer                   | 1             | Minimal possible gate to set                                                             |
 | max        | +Integer                   |               | Maximal possible gate to set                                                             |
-| step       | +Float                     | 0.5           | Default step between gates terms of X-axis                                                              |
+| step       | +Float                     | 0.5           | Default step between gates terms of X-axis                                               |
 | wind       | Real                       |               | Wind influence on gate                                                                   |
+| pdy        | +Float                     |               | Height of gate stands                                                                    |
 | z[1, 2]    | Real                       | -1, 1         | Distance between ending of gate from inrun center in position relative to the the Z-axis |
 | pz[1, 2]   | Real                       | -1, 1         | Distance between gate stands from inrun center in position relative to the the Z-axis    |
 | [t, m, c]1 | [Texture, Material, Color] |               | Gate texture, material and color                                                         |
