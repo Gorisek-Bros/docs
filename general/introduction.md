@@ -90,7 +90,3 @@ To avoid text repetition, some attribute names may be shortened. The table below
 ::: warning
 Notice possible attribute names at refx[1, 2]?. They can be refx OR refx1 and refx2. That means you can have either refx or refx1 and refx2 - such attributes when mixed are excluding each other.
 :::
-
-## Contributing
-
-Everyone is welcomed to contribute to the documentation! Source code is available [here](https://github.com/Gorisek-Bros/docs). You can send your issues or pull requests. In case you don't have that much programming knowledge, you can contact the documentation maintainer using [Facebook](https://facebook.com/grzegorz.perun/) or [GitHub](https://github.com/Mensix/).
