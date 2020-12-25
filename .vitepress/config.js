@@ -47,8 +47,8 @@ module.exports = {
     repo: "Gorisek-Bros/docs",
     editLinkText: "Edit this page on GitHub",
     algolia: {
-      apiKey: "f2fd998a9414498269c1b082cee6c6fc",
-      indexName: "gorisekdocs",
+      apiKey: "987be56139a7399885d42abc44bec3e6",
+      indexName: "dsj24",
     },
     sidebar: [
       {
