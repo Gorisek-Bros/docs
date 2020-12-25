@@ -46,6 +46,10 @@ If you know any usage of attributes below, contact the documenation maintainer.
 * k1
 * k2
 
+::: warning
+arc element was never used and its implementation is probably bugged.
+:::
+
 ### arc
 
 * x
