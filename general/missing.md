@@ -102,10 +102,6 @@ arc element was never used and its implementation is probably bugged.
 
 * t
 
-### startgate
-
-* pdy
-
 ## dhill
 
 ### profile
