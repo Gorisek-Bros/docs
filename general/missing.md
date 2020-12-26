@@ -34,13 +34,6 @@ If you know any usage of attributes below, contact the documenation maintainer.
 
 * corner
 
-### polynom3
-
-* x
-* y
-* k1
-* k2
-
 ::: warning
 arc element was never used and its implementation is probably bugged.
 :::

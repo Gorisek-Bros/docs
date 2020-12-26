@@ -60,6 +60,29 @@ The next points are defined using the line element. As the profile is continuous
 | refy  | String | A reference to the Y-axis, which profile is based on                       | True     |
 | refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on | True     |
 
+### Polynom3
+Parent element name: profile\
+Element name: polynom3
+
+The next points can also be reach by using more sophisticated way e.g. by using polynom3. Polynom3 element describes a 3rd degree polynomial. 
+
+| Name  | Type   | Description                                                                | Optional |
+| ----- | ------ | -------------------------------------------------------------------------- | -------- |
+| x     | Float  | The next point in position relative to the X-axis                          |          |
+| y     | Float  | The next point in position relative to the Y-axis                          |          |
+| k1    | Float  | First derivative at a start of polynom3                                    | True     |
+| k2    | Float  | First derivative at a end of polynom3                                      |          |
+| refx  | String | A reference to the X-axis, which profile is based on                       | True     |
+| refy  | String | A reference to the Y-axis, which profile is based on                       | True     |
+| refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on | True     |
+
+::: tip
+Start point of polynom3 means the end of previous element.  
+:::
+::: tip
+If you don't define *k1* attribute, polynom3 will continue previous element at starting point. 
+:::
+
 ## Required profiles
 
 There are two required profiles that you have to define by yourself, without them, your hill won't load.
