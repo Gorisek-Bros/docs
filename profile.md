@@ -27,21 +27,23 @@ It's not usually required to adjust the maxstep. One of cases when you can adjus
 
 The starting point of every profile is the start element.
 
-| Name | Type   | Description                                           | Optional |
-| ---- | ------ | ----------------------------------------------------- | -------- |
-| x    | Float  | The starting point in position relative to the X-axis |          |
-| y    | Float  | The starting point in position relative to the Y-axis |          |
-| refx | String | A reference to the X-axis, which profile is based on  | True     |
-| refy | String | A reference to the Y-axis, which profile is based on  | True     |
+| Name  | Type   | Description                                                                 | Optional |
+| ----- | ------ | --------------------------------------------------------------------------- | -------- |
+| x     | Float  | The starting point in position relative to the X-axis                       |          |
+| y     | Float  | The starting point in position relative to the Y-axis                       |          |
+| refx  | String | A reference to the X-axis, which profile is based on                        | True     |
+| refy  | String | A reference to the Y-axis, which profile is based on                        | True     |
+| refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on  | True     |
 
 The next points are defined using the line element. As the profile is continuous, the start and lines will be connected in defined coordinates.
 
-| Name | Type   | Description                                          | Optional |
-| ---- | ------ | ---------------------------------------------------- | -------- |
-| x    | Float  | The next point in position relative to the X-axis    |          |
-| y    | Float  | The next point in position relative to the Y-axis    |          |
-| refx | String | A reference to the X-axis, which profile is based on | True     |
-| refy | String | A reference to the Y-axis, which profile is based on | True     |
+| Name  | Type   | Description                                                                | Optional |
+| ----- | ------ | -------------------------------------------------------------------------- | -------- |
+| x     | Float  | The next point in position relative to the X-axis                          |          |
+| y     | Float  | The next point in position relative to the Y-axis                          |          |
+| refx  | String | A reference to the X-axis, which profile is based on                       | True     |
+| refy  | String | A reference to the Y-axis, which profile is based on                       | True     |
+| refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on | True     |
 
 ## Required profiles
 

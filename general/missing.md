@@ -30,13 +30,8 @@ If you know any usage of attributes below, contact the documenation maintainer.
 
 * maxturn
 
-### start
-
-* refyx
-
 ### line
 
-* refyx
 * corner
 
 ### polynom3
