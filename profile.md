@@ -83,25 +83,6 @@ Start point of polynom3 means the end of previous element.
 If you don't define *k1* attribute, polynom3 will continue previous element at starting point. 
 :::
 
-### Profile
-Parent element name: profile\
-Element name: profile
-
-Your defined profile can also contain build-in or yours, predefined profiles.
-
-| Name  | Type   | Description                                                      | Optional |
-| ----- | ------ | ---------------------------------------------------------------- | -------- |
-| id    | String | The name of profile used                                         |          |
-| x     | Float  | The end point of profile in position relative to the X-axis      | True     |
-| y     | Float  | The profile shift in position relative to the Y-axis             | True     |
-| n     | Float  | The profile shift in position perpendicular to the profile       | True     |
-| dx    | Float  | The profile shift in position relative to the X-axis             | True     |
-| refx  | String | A reference to the X-axis, which X-point is based on             | True     |
-
-::: warning
-Profile, by default, is shifted in position relative to Y-axis to match previously used element. *y*/*n* attibutes apply to this, default shift. 
-:::
-
 ## Required profiles
 
 There are two required profiles that you have to define by yourself, without them, your hill won't load.
