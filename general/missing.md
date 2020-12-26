@@ -45,14 +45,6 @@ arc element was never used and its implementation is probably bugged.
 * x0
 * y0
 
-### profile
-
-* id
-* x
-* y
-* n
-* dx
-
 ## lights
 
 * n
