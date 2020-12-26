@@ -70,8 +70,8 @@ The next points can also be reach by using more sophisticated way e.g. by using 
 | ----- | ------ | -------------------------------------------------------------------------- | -------- |
 | x     | Float  | The next point in position relative to the X-axis                          |          |
 | y     | Float  | The next point in position relative to the Y-axis                          |          |
-| k1    | Float  | First derivative at a start of polynom3                                    | True     |
-| k2    | Float  | First derivative at a end of polynom3                                      |          |
+| k1    | Float  | First derivative at the start of polynom3                                  | True     |
+| k2    | Float  | First derivative at the end of polynom3                                    |          |
 | refx  | String | A reference to the X-axis, which profile is based on                       | True     |
 | refy  | String | A reference to the Y-axis, which profile is based on                       | True     |
 | refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on | True     |
