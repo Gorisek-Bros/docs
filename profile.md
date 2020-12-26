@@ -25,6 +25,16 @@ It's not usually required to adjust the maxstep. One of cases when you can adjus
 
 ## Children elements
 
+::: tip
+In your defined profile you don't need to use all of below elements. Only use of *start* element and one of other elements (line, polynom3, arc or profile) is required. *line*, *polynom3*, *arc* or *profile* elements can be used multiple times. 
+:::
+
+### Start
+
+Parent element name: profile\
+Element name: start
+
+
 The starting point of every profile is the start element.
 
 | Name  | Type   | Description                                                                 | Optional |
@@ -34,6 +44,11 @@ The starting point of every profile is the start element.
 | refx  | String | A reference to the X-axis, which profile is based on                        | True     |
 | refy  | String | A reference to the Y-axis, which profile is based on                        | True     |
 | refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on  | True     |
+
+
+### Line
+Parent element name: profile\
+Element name: line
 
 The next points are defined using the line element. As the profile is continuous, the start and lines will be connected in defined coordinates.
 
