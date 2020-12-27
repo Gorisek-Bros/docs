@@ -89,14 +89,14 @@ Element name: profile
 
 Your defined profile can also contain build-in or yours, predefined profiles.
 
-| Name  | Type   | Description                                                      | Optional |
-| ----- | ------ | ---------------------------------------------------------------- | -------- |
-| id    | String | The name of profile used                                         |          |
-| x     | Float  | The end point of profile in position relative to the X-axis      | True     |
-| y     | Float  | The profile shift in position relative to the Y-axis             | True     |
-| n     | Float  | The profile shift in position perpendicular to this profile       | True     |
-| dx    | Float  | The profile shift in position relative to the X-axis             | True     |
-| refx  | String | A reference to the X-axis, which X-point is based on             | True     |
+| Name  | Type   | Description                                                                         | Optional |
+| ----- | ------ | ----------------------------------------------------------------------------------- | -------- |
+| id    | String | The name of profile used                                                            |          |
+| x     | Float  | The end point of profile in position relative to the X-axis                         | True     |
+| y     | Float  | The profile shift in position relative to the Y-axis                                | True     |
+| n     | Float  | The profile shift in position perpendicular (using normal vectors) to this profile  | True     |
+| dx    | Float  | The profile shift in position relative to the X-axis                                | True     |
+| refx  | String | A reference to the X-axis, which X-point (from *x* attribute) is based on           | True     |
 
 ::: warning
 Profile, by default, is shifted in position relative to Y-axis to match previously used element. *y* and *n* attibutes apply to this, default shift. 
@@ -119,7 +119,7 @@ Arc element defines the arc that is part of a circle. It can be used e.g. to cre
 | refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on | True     |
 
 ::: warning 
-X0(Y0)-axis is the axis of global coordinates system. You can't change its references.
+X0(Y0)-axis is the axis of global coordinates system. You can't change its reference.
 :::
 
 ::: tip
