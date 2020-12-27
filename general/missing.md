@@ -28,8 +28,6 @@ If you know any usage of attributes below, contact the documenation maintainer.
 
 ## profile
 
-* maxturn
-
 ### line
 
 * corner

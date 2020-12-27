@@ -17,11 +17,16 @@ The root element of the profile is the profile. It takes two attributes.
 It's not usually required to adjust the maxstep. One of cases when you can adjust it might be better looking spot lights.
 :::
 
-| Name    | Type     | Allowed values | Description                         | Optional |
-| ------- | -------- | -------------- | ----------------------------------- | -------- |
-| id      | String   |                | A profile name                      |          |
-| side    | String   | left, right    | Placement in terms of refx          | True     |
-| maxstep | +Integer | 1000           | A profile linear points split count | True     |
+::: tip
+Maxturn attribute can be understood as chord length of curved surfaces. The smaller the maxturn value is, the smoother the profile is, but more vertices and faces are rendered. Default value is circa 0.5.
+:::
+
+| Name    | Type     | Allowed values | Description                                | Optional |
+| ------- | -------- | -------------- | ------------------------------------------ | -------- |
+| id      | String   |                | A profile name                             |          |
+| side    | String   | left, right    | Placement in terms of refx                 | True     |
+| maxstep | +Integer | 1000           | A profile linear points split count        | True     |
+| maxturn | +Float   |                | A profile nonlinear points interval length | True     |
 
 ## Children elements
 
