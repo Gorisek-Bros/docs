@@ -34,17 +34,6 @@ If you know any usage of attributes below, contact the documenation maintainer.
 
 * corner
 
-::: warning
-arc element was never used and its implementation is probably bugged.
-:::
-
-### arc
-
-* x
-* y
-* x0
-* y0
-
 ## lights
 
 * n

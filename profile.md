@@ -102,6 +102,33 @@ Your defined profile can also contain build-in or yours, predefined profiles.
 Profile, by default, is shifted in position relative to Y-axis to match previously used element. *y* and *n* attibutes apply to this, default shift. 
 :::
 
+### Arc
+Parent element name: profile\
+Element name: arc
+
+Arc element defines the arc that is part of a circle. It can be used e.g. to create elements that can't be created by beams. 
+
+| Name  | Type   | Description                                                                | Optional |
+| ----- | ------ | -------------------------------------------------------------------------- | -------- |
+| x     | Float  | The next point in position relative to the X-axis                          |          |
+| y     | Float  | The next point in position relative to the Y-axis                          |          |
+| x0    | Float  | The centre point of circle in position relative to X0-axis                 |          |
+| y0    | Float  | The centre point of circle in position relative to Y0-axis                 |          |
+| refx  | String | A reference to the X-axis, which profile is based on                       | True     |
+| refy  | String | A reference to the Y-axis, which profile is based on                       | True     |
+| refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on | True     |
+
+::: warning 
+X0(Y0)-axis is the axis of global coordinates system. You can't change its references.
+:::
+
+::: tip
+The origin of global coordinates system is located under centre of take-off as shown in the picture.
+
+![1](/arc.png)
+::: 
+
+
 ## Required profiles
 
 There are two required profiles that you have to define by yourself, without them, your hill won't load.
