@@ -22,7 +22,7 @@ The root element of the profile is the profile. It takes up to five attributes.
 | refx 	  | String   |                | A reference to the X-axis, which profile is based on  | True     |
 
 ::: tip
-Maxstep can be understood as max length of subelements, which create linear element. The smaller the maxstep value is, linear elements are splitted into more smaller elements not longer than maxstep.   
+Maxstep can be understood as max length of subelements, which create linear elements. The smaller the maxstep value is, linear elements are splitted into more smaller elements not longer than maxstep.   
 It's not usually required to adjust the maxstep. One of cases when you can adjust it might be better looking spot lights.
 :::
 
@@ -37,7 +37,7 @@ If you defined *refx* attribute in this element, all children will have the same
 ## Children elements
 
 ::: tip
-In your defined profile you don't need to use all of below elements. Only use of *start* element and one of other elements (line, polynom3, arc or profile) is required. *line*, *polynom3*, *arc* or *profile* elements can be used multiple times. 
+In your defined profile you don't need to use all of below elements. Only use of *start* element and one of other elements (*line*, *polynom3*, *arc* or *profile*) is required. *line*, *polynom3*, *arc* or *profile* elements can be used multiple times. 
 :::
 
 ### Start
@@ -116,7 +116,7 @@ Your defined profile can also contain build-in or your other predefined profiles
 | refx  | String | A reference to the X-axis, which X-point (from *x* attribute) is based on           | True     |
 
 ::: warning
-Profile, by default, is shifted in position relative to Y-axis to match previously used element. *y* and *n* attibutes apply to this, default shift. 
+Profile, by default, is shifted in position relative to Y-axis to match previously used element. *y* and *n* attibutes apply to this default shift. 
 :::
 
 ::: tip
