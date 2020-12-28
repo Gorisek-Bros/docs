@@ -95,6 +95,10 @@ module.exports = {
             text: "Guardrail",
           },
           {
+            link: "/inrun/lights",
+            text: "Lights",
+          },
+          {
             link: "/inrun/frame",
             text: "Frame",
           },
