@@ -19,7 +19,7 @@ The root element of the profile is the profile. It takes up to five attributes.
 | side    | String   | left, right    | Placement in terms of refx                            | True     |
 | maxstep | +Float   |                | A profile linear points max interval length           | True     |
 | maxturn | +Float   |                | A profile nonlinear points max interval length        | True     |
-| refx 	  | String   |                | A reference to the X-axis, which profile is based on  | True     |
+| refx    | String   |                | A reference to the X-axis, which profile is based on  | True     |
 
 ::: tip
 Maxstep can be understood as max length of subelements, which create linear elements. The smaller the maxstep value is, linear elements are splitted into more smaller elements not longer than maxstep.   
@@ -27,7 +27,7 @@ It's not usually required to adjust the maxstep. One of cases when you can adjus
 :::
 
 ::: tip
-Maxturn attribute can be understood as max chord length of curved lines. The smaller the maxturn value is, the smoother the profile is, but more vertices and faces are rendered. Default value is circa 0.5.
+Maxturn attribute can be understood as max chord length of curved lines. The smaller the maxturn value is, the smoother the profile is, but more vertices and faces are rendered.
 :::
 
 ::: tip
@@ -93,9 +93,11 @@ The next points can also be reached using more sophisticated way e.g. with polyn
 ::: tip
 The start of polynom3 means the end point of previous element.  
 :::
+
 ::: tip
 If you don't define *k1* attribute, polynom3 will continue previous element at the starting point. 
 :::
+
 ::: tip
 In many cases, you don't need to use mathematical equations of polynom3 and its derivatives. Usually, a simple adjustment of *x*, *y*, *k1* and *k2* attributes is enough.
 :::
@@ -140,7 +142,7 @@ Arc element defines the arc that is part of a circle. It can be used e.g. to cre
 | refyx | Float  | A reference to X-point, which Y-point (from *y* attribute) is based on     | True     |
 
 ::: warning 
-X0(Y0)-axis is the axis of global coordinates system. You can't change its reference.
+[x, y]0-axis are the axis of global coordinates system. You can't change its reference.
 :::
 
 ::: tip
