@@ -11,7 +11,15 @@ This section of the documentation contains things, that can't be described using
 
 ## Starting with profiles
 
-The root element of the profile is the profile. It takes two attributes.
+The root element of the profile is the profile. It takes up to five attributes.
+
+| Name    | Type     | Allowed values | Description                                           | Optional |
+| ------- | -------- | -------------- | ----------------------------------------------------- | -------- |
+| id      | String   |                | A profile name                                        |          |
+| side    | String   | left, right    | Placement in terms of refx                            | True     |
+| maxstep | +Float   |                | A profile linear points max interval length           | True     |
+| maxturn | +Float   |                | A profile nonlinear points max interval length        | True     |
+| refx 	  | String   |                | A reference to the X-axis, which profile is based on  | True     |
 
 ::: tip
 Maxstep can be understood as max length of subelements, which create linear element. The smaller the maxstep value is, linear elements are splitted into more smaller elements not longer than maxstep.   
@@ -22,12 +30,9 @@ It's not usually required to adjust the maxstep. One of cases when you can adjus
 Maxturn attribute can be understood as max chord length of curved lines. The smaller the maxturn value is, the smoother the profile is, but more vertices and faces are rendered. Default value is circa 0.5.
 :::
 
-| Name    | Type     | Allowed values | Description                                    | Optional |
-| ------- | -------- | -------------- | ---------------------------------------------- | -------- |
-| id      | String   |                | A profile name                                 |          |
-| side    | String   | left, right    | Placement in terms of refx                     | True     |
-| maxstep | +Float   |                | A profile linear points max interval length    | True     |
-| maxturn | +Float   |                | A profile nonlinear points max interval length | True     |
+::: tip
+If you defined *refx* attribute in this element, all children will have the same reference to the *refx* attribute (until you overwrite this in child element).
+:::
 
 ## Children elements
 
@@ -40,7 +45,6 @@ In your defined profile you don't need to use all of below elements. Only use of
 Parent element name: profile\
 Element name: start
 
-
 The starting point of every profile is the start element.
 
 | Name  | Type   | Description                                                                 | Optional |
@@ -51,6 +55,10 @@ The starting point of every profile is the start element.
 | refy  | String | A reference to the Y-axis, which profile is based on                        | True     |
 | refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on  | True     |
 
+::: warning
+If you don't define refx(refy) attribute, the point position is based on the corresponding axis (X or Y) of the global coordinate system. In some cases, this may be the desired action.
+More about global coordinates system in Arc section
+:::
 
 ### Line
 Parent element name: profile\
