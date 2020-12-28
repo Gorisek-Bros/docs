@@ -14,19 +14,20 @@ This section of the documentation contains things, that can't be described using
 The root element of the profile is the profile. It takes two attributes.
 
 ::: tip
+Maxstep can be understood as max length of subelements, which create linear element. The smaller the maxstep value is, linear elements are splitted into more smaller elements not longer than maxstep.   
 It's not usually required to adjust the maxstep. One of cases when you can adjust it might be better looking spot lights.
 :::
 
 ::: tip
-Maxturn attribute can be understood as chord length of curved surfaces. The smaller the maxturn value is, the smoother the profile is, but more vertices and faces are rendered. Default value is circa 0.5.
+Maxturn attribute can be understood as max chord length of curved lines. The smaller the maxturn value is, the smoother the profile is, but more vertices and faces are rendered. Default value is circa 0.5.
 :::
 
-| Name    | Type     | Allowed values | Description                                | Optional |
-| ------- | -------- | -------------- | ------------------------------------------ | -------- |
-| id      | String   |                | A profile name                             |          |
-| side    | String   | left, right    | Placement in terms of refx                 | True     |
-| maxstep | +Integer | 1000           | A profile linear points split count        | True     |
-| maxturn | +Float   |                | A profile nonlinear points interval length | True     |
+| Name    | Type     | Allowed values | Description                                    | Optional |
+| ------- | -------- | -------------- | ---------------------------------------------- | -------- |
+| id      | String   |                | A profile name                                 |          |
+| side    | String   | left, right    | Placement in terms of refx                     | True     |
+| maxstep | +Float   |                | A profile linear points max interval length    | True     |
+| maxturn | +Float   |                | A profile nonlinear points max interval length | True     |
 
 ## Children elements
 
