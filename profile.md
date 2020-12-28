@@ -88,6 +88,9 @@ Start point of polynom3 means the end of previous element.
 ::: tip
 If you don't define *k1* attribute, polynom3 will continue previous element at starting point. 
 :::
+::: tip
+In many cases, you don't need to use mathematical equations of polynom3 and its derivatives. A simple adjustment of *x*, *y*, *k1* and *k2* attributes is enough.
+:::
 
 ### Profile
 Parent element name: profile\
@@ -106,6 +109,10 @@ Your defined profile can also contain build-in or yours, predefined profiles.
 
 ::: warning
 Profile, by default, is shifted in position relative to Y-axis to match previously used element. *y* and *n* attibutes apply to this, default shift. 
+:::
+
+::: tip
+The term "end point of profile" means the end point of use of given profile, not the end point of profile in general. 
 :::
 
 ### Arc
