@@ -28,42 +28,9 @@ If you know any usage of attributes below, contact the documenation maintainer.
 
 ## profile
 
-* maxturn
-
-### start
-
-* refyx
-
 ### line
 
-* refyx
 * corner
-
-### polynom3
-
-* x
-* y
-* k1
-* k2
-
-::: warning
-arc element was never used and its implementation is probably bugged.
-:::
-
-### arc
-
-* x
-* y
-* x0
-* y0
-
-### profile
-
-* id
-* x
-* y
-* n
-* dx
 
 ## lights
 
