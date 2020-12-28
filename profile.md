@@ -53,7 +53,7 @@ The starting point of every profile is the start element.
 | y     | Float  | The starting point in position relative to the Y-axis                       |          |
 | refx  | String | A reference to the X-axis, which profile is based on                        | True     |
 | refy  | String | A reference to the Y-axis, which profile is based on                        | True     |
-| refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on  | True     |
+| refyx | Float  | A reference to X-point, which Y-point (from *y* attribute) is based on      | True     |
 
 ::: warning
 If you don't define refx(refy) attribute, the point position is based on the corresponding axis (X or Y) of the global coordinate system. In some cases, this may be the desired action.
@@ -64,7 +64,7 @@ More about global coordinates system in Arc section
 Parent element name: profile\
 Element name: line
 
-The next points are defined using the line element. As the profile is continuous, the start and lines will be connected in defined coordinates.
+The next points can be defined using the line element. As the profile is continuous, the start and lines will be connected in defined coordinates.
 
 | Name  | Type   | Description                                                                | Optional |
 | ----- | ------ | -------------------------------------------------------------------------- | -------- |
@@ -72,13 +72,13 @@ The next points are defined using the line element. As the profile is continuous
 | y     | Float  | The next point in position relative to the Y-axis                          |          |
 | refx  | String | A reference to the X-axis, which profile is based on                       | True     |
 | refy  | String | A reference to the Y-axis, which profile is based on                       | True     |
-| refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on | True     |
+| refyx | Float  | A reference to X-point, which Y-point (from *y* attribute) is based on     | True     |
 
 ### Polynom3
 Parent element name: profile\
 Element name: polynom3
 
-The next points can also be reach by using more sophisticated way e.g. by using polynom3. Polynom3 element describes a 3rd degree polynomial. 
+The next points can also be reached using more sophisticated way e.g. with polynom3. Polynom3 element describes a 3rd degree polynomial. 
 
 | Name  | Type   | Description                                                                | Optional |
 | ----- | ------ | -------------------------------------------------------------------------- | -------- |
@@ -88,31 +88,31 @@ The next points can also be reach by using more sophisticated way e.g. by using 
 | k2    | Float  | First derivative at the end of polynom3                                    |          |
 | refx  | String | A reference to the X-axis, which profile is based on                       | True     |
 | refy  | String | A reference to the Y-axis, which profile is based on                       | True     |
-| refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on | True     |
+| refyx | Float  | A reference to X-point, which Y-point (from *y* attribute) is based on     | True     |
 
 ::: tip
-Start point of polynom3 means the end of previous element.  
+The start of polynom3 means the end point of previous element.  
 :::
 ::: tip
-If you don't define *k1* attribute, polynom3 will continue previous element at starting point. 
+If you don't define *k1* attribute, polynom3 will continue previous element at the starting point. 
 :::
 ::: tip
-In many cases, you don't need to use mathematical equations of polynom3 and its derivatives. A simple adjustment of *x*, *y*, *k1* and *k2* attributes is enough.
+In many cases, you don't need to use mathematical equations of polynom3 and its derivatives. Usually, a simple adjustment of *x*, *y*, *k1* and *k2* attributes is enough.
 :::
 
 ### Profile
 Parent element name: profile\
 Element name: profile
 
-Your defined profile can also contain build-in or yours, predefined profiles.
+Your defined profile can also contain build-in or your other predefined profiles.
 
 | Name  | Type   | Description                                                                         | Optional |
 | ----- | ------ | ----------------------------------------------------------------------------------- | -------- |
 | id    | String | The name of profile used                                                            |          |
 | x     | Float  | The end point of profile in position relative to the X-axis                         | True     |
-| y     | Float  | The profile shift in position relative to the Y-axis                                | True     |
-| n     | Float  | The profile shift in position perpendicular (using normal vectors) to this profile  | True     |
-| dx    | Float  | The profile shift in position relative to the X-axis                                | True     |
+| y     | Float  | A profile shift in position relative to the Y-axis                                  | True     |
+| n     | Float  | A profile shift in position perpendicular (using normal vectors) to this profile    | True     |
+| dx    | Float  | A profile shift in position relative to the X-axis                                  | True     |
 | refx  | String | A reference to the X-axis, which X-point (from *x* attribute) is based on           | True     |
 
 ::: warning
@@ -120,7 +120,7 @@ Profile, by default, is shifted in position relative to Y-axis to match previous
 :::
 
 ::: tip
-The term "end point of profile" means the end point of use of given profile, not the end point of profile in general. 
+The term "end point of profile" means the end point of use of given profile, not the end point of this profile in general. 
 :::
 
 ### Arc
@@ -137,7 +137,7 @@ Arc element defines the arc that is part of a circle. It can be used e.g. to cre
 | y0    | Float  | The centre point of circle in position relative to Y0-axis                 |          |
 | refx  | String | A reference to the X-axis, which profile is based on                       | True     |
 | refy  | String | A reference to the Y-axis, which profile is based on                       | True     |
-| refyx | Float  | A reference to the X-point, which Y-point (from *y* attribute) is based on | True     |
+| refyx | Float  | A reference to X-point, which Y-point (from *y* attribute) is based on     | True     |
 
 ::: warning 
 X0(Y0)-axis is the axis of global coordinates system. You can't change its reference.
