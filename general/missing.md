@@ -49,15 +49,6 @@ If you know any usage of attributes below, contact the documenation maintainer.
 * n[top, bottom]
 * texture-refy
 
-## beam
-
-* ny[1, 2]?
-* nz[1, 2]?
-* r[1, 2]?[b]?
-* side
-* n_[x, y, z]
-* invert
-
 ## beamgroup
 
 * [d, n][x, y, z][1, 2]?
