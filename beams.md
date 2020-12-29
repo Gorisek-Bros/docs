@@ -18,6 +18,10 @@ The beam is a bollard. It's ideal to create for example simple handrail. Many be
 | refy[1, 2]? | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis, which beam is based on                   | True     |
 | refz[1, 2]? | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis, which beam is based on                   | True     |
 
+::: warning
+Beam is always created along the shortest possible path between [x, y, z]1 to [x, y, z]2. It isn't possible to create a curved beam.
+:::
+
 ### Advanced beams positioning and rotating
 
 ::: tip
@@ -94,7 +98,7 @@ The stepper attribute can't be described using only words, as it includes advanc
 
 | Name      | Type    | Default value | Description                                   | Optional |
 | --------- | ------- | ------------- | --------------------------------------------- | -------- |
-| first     | Boolean | Trur          | Toggles rendering the first beam in beamgroup | True     |
+| first     | Boolean | True          | Toggles rendering the first beam in beamgroup | True     |
 | last      | Boolean | True          | Toggles rendering the last beam in beamgroup  | True     |
 | end[1, 2] | Boolean | False         | Toggles rendering full shapes of beams        | True     |
 | side      | Boolean | True          | Toggles rendering sides of the beam            | True     |
@@ -109,10 +113,11 @@ These attributes manage the position of the starting beam. The position of the n
 Beamgroups render multiple beams in a range of positions from [x, y, z]1 to [x, y, z]2.
 :::
 
-| Name      | Type  | Description                                                         |
-| --------- | ----- | ------------------------------------------------------------------- |
-| dx[1, 2]? | Float | The position relative to X-axis of starting beam                    |
-| dy[1, 2]? | Float | The position relative to Y-axis of starting beam                    |
-| dz[1, 2]? | Float | The position relative to Z-axis of starting beam                    |
-| ny[1, 2]? | Float | The position perpendicular relative to refy[1, 2]? of starting beam |
-| nz[1, 2]? | Float | The position perpendicular relative to refz[1, 2]? of starting beam |
+| Name        | Type  | Description                                                                           |
+| ----------- | ----- | ------------------------------------------------------------------------------------- |
+| dx[1, 2]?   | Float | The position relative to X-axis of starting beam                                      |
+| dy[1, 2]?   | Float | The position relative to Y-axis of starting beam                                      |
+| dz[1, 2]?   | Float | The position relative to Z-axis of starting beam                                      |
+| ny[1, 2]?   | Float | The position perpendicular relative to refy[1, 2]? of starting beam                   |
+| nz[1, 2]?   | Float | The position perpendicular relative to refz[1, 2]? of starting beam                   |
+| n_[x, y, z] | Float | The [X, Y, Z]-coordinate of a normal vector to one of side edges of the starting beam | 
