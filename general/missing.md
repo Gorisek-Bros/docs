@@ -52,7 +52,6 @@ If you know any usage of attributes below, contact the documenation maintainer.
 ## beamgroup
 
 * [d, n][x, y, z][1, 2]?
-* n_[x, y, z]
 
 ## inrun
 
