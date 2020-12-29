@@ -125,3 +125,13 @@ Beamgroups render multiple beams in a range of positions from [x, y, z]1 to [x, 
 | ny[1, 2]?   | Float | The position perpendicular relative to refy[1, 2]? profile of starting beam           |
 | nz[1, 2]?   | Float | The position perpendicular relative to refz[1, 2]? profile of starting beam           |
 | n_[x, y, z] | Float | The [X, Y, Z]-coordinate of a normal vector to one of side edges of the starting beam | 
+
+## Code snippets
+
+``` xml
+<hill version="DSJ4-1.7.0">
+    <!-- Rest of code omitted for clearance -->
+    <beam x1="5" x2="25" y="1.5" z="1.5" r="0.025" edges="8" end1="true" end2="true" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0x505050" refx="inrun" refy="inrun-top"/>
+    <beamgroup x1="5" x2="25" y="0" z="1.5" r="0.025" edges="8" dy1="0" dy2="1.5" end1="false" end2="true" smooth="true" stepper="1" step="1" t="Textures\metal.png" m="Materials\metal.xml" c="0x505050" refx="inrun" refy="inrun-top"/>
+</hill>
+```
