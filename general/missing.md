@@ -37,12 +37,6 @@ If you know any usage of attributes below, contact the documenation maintainer.
 * n
 * zmargin
 
-## railing
-
-* pt[1, 2, 3, 4, 5, 6]
-* texture[1, 2, 3, 4, 5, 6]-refy
-* ta[1, 2, 3, 4, 5, 6]
-
 ## beamgroup
 
 * [d, n][x, y, z][1, 2]?

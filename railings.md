@@ -28,15 +28,15 @@ This section of the documentation contains things, that can't be described using
 Manipulating the length of railings in DSJ4 is based on manipulating x1 and x2 attributes.
 :::
 
-| Name    | Type  | Description                                           |
-| ------- | ----- | ----------------------------------------------------- |
-| x1      | Float | The starting point in position relative to the X-axis |
-| x2      | Float | The ending point in position relative to the X-axis   |
-| w       | Float | Width                                                 |
-| h       | Float | Height                                                |
-| h2      | Float | The second height value                               |
-| n[1, 2] | Float | Height value perpendicular to the refy profile        |
-
+| Name    | Type    | Description                                           |
+| ------- | ------- | ----------------------------------------------------- |
+| x1      | Float   | The starting point in position relative to the X-axis |
+| x2      | Float   | The ending point in position relative to the X-axis   |
+| w       | Float   | Width                                                 |
+| h       | Float   | Height                                                |
+| h2      | Float   | The second height value                               |
+| n[1, 2] | Float   | Height value perpendicular to the [t, b]refy? profile |
+| guard   | Boolean | Toggles the vertical cut at the start of the railing  |
 
 ## Controlling sides visibility
 
@@ -59,18 +59,25 @@ Use normal type attribute if you are using opaque texture. When using textures w
 If you have two surfaces that are overlapping each other, specify the zbias attribute, so this surface will appear "above" the second surface
 :::
 
-| Name                     | Type                       | Allowed values       | Description                                    | Optional |
-| ------------------------ | -------------------------- | -------------------- | ---------------------------------------------- | -------- |
-| [t, m, c]                | [Texture, Material, Color] |                      | Texture, material and color of all sides       |          |
-| [t, m, c]1               | [Texture, Material, Color] |                      | Texture, material and color of the left side   | True     |
-| [t, m, c]2               | [Texture, Material, Color] |                      | Texture, material and color of the right side  | True     |
-| [t, m, c]3               | [Texture, Material, Color] |                      | Texture, material and color of the top side    | True     |
-| [t, m, c]4               | [Texture, Material, Color] |                      | Texture, material and color of the bottom side | True     |
-| [t, m, c]5               | [Texture, Material, Color] |                      | Texture, material and color of the rear side   | True     |
-| [t, m, c]6               | [Texture, Material, Color] |                      | Texture, material and color of the front side  | True     |
-| scale[1, 2, 3, 4, 5, 6]? | Float                      |                      | Texture scaling factor                         |          |
-| type                     | String                     | normal, blend, glass | Type                                           |          |
-| zbias                    | +Integer                   |                      | Z-index                                        | True     |
+| Name                            | Type                       | Allowed values       | Description                                            | Optional |
+| ------------------------------- | -------------------------- | -------------------- | ------------------------------------------------------ | -------- |
+| [t, m, c]                       | [Texture, Material, Color] |                      | Texture, material and color of all sides               |          |
+| [t, m, c]1                      | [Texture, Material, Color] |                      | Texture, material and color of the left side           | True     |
+| [t, m, c]2                      | [Texture, Material, Color] |                      | Texture, material and color of the right side          | True     |
+| [t, m, c]3                      | [Texture, Material, Color] |                      | Texture, material and color of the top side            | True     |
+| [t, m, c]4                      | [Texture, Material, Color] |                      | Texture, material and color of the bottom side         | True     |
+| [t, m, c]5                      | [Texture, Material, Color] |                      | Texture, material and color of the rear side           | True     |
+| [t, m, c]6                      | [Texture, Material, Color] |                      | Texture, material and color of the front side          | True     |
+| pt[1, 2, 3, 4, 5, 6]?           | Boolean                    |                      | Toggles texture snapping to the railling shape         | True     |
+| scale[1, 2, 3, 4, 5, 6]?        | Float                      |                      | Texture scaling factor                                 | True     |
+| ta[1, 2, 3, 4, 5, 6]            | Float                      |                      | Texture shift in position relative to Y-axis           | True     |
+| texture[1, 2, 3, 4, 5, 6]-refy? | String                     |                      | A reference to the Y-axis, which textures are based on | True     |
+| type                            | String                     | normal, blend, glass | Type                                                   | True     |
+| zbias                           | +Integer                   |                      | Z-index                                                | True     |
+
+::: tip
+Texture-refy attribute works only when `pt="false"`. 
+:::
 
 ## Code snippets
 
