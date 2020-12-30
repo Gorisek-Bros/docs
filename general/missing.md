@@ -43,20 +43,9 @@ If you know any usage of attributes below, contact the documenation maintainer.
 * texture[1, 2, 3, 4, 5, 6]-refy
 * ta[1, 2, 3, 4, 5, 6]
 
-## pillar
-
-* n[top, bottom]
-* texture-refy
-
 ## beamgroup
 
 * [d, n][x, y, z][1, 2]?
-
-## inrun
-
-### profile
-
-* t
 
 ## dhill
 
