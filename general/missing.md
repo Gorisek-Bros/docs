@@ -39,7 +39,6 @@ If you know any usage of attributes below, contact the documenation maintainer.
 
 ## railing
 
-* n[1, 2]
 * pt[1, 2, 3, 4, 5, 6]
 * texture[1, 2, 3, 4, 5, 6]-refy
 * ta[1, 2, 3, 4, 5, 6]

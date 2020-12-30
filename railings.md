@@ -15,6 +15,7 @@ This section of the documentation contains things, that can't be described using
 | ----------- | ------ | ------------------------------------------------------------------------ | --------------------------------------------------------------------------- | -------- |
 | y[1, 2]     | Float  |                                                                          | The position relative to the Y-axis                                         | True     |
 | z[1, 2]     | Float  |                                                                          | The position relative to the Z-axis                                         | True     |
+| d           | Float  |                                                                          | The shift in position relative to Z-axis                                    | True     |
 | refx[1, 2]? | String | A built-in reference which applies for refx                              | A reference to the X-axis, which railings are based on                      | True     |
 | refy        | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis, which railings are based on                      | True     |
 | refz        | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis, which railings are based on                      | True     |
@@ -27,13 +28,15 @@ This section of the documentation contains things, that can't be described using
 Manipulating the length of railings in DSJ4 is based on manipulating x1 and x2 attributes.
 :::
 
-| Name | Type  | Description                                           |
-| ---- | ----- | ----------------------------------------------------- |
-| x1   | Float | The starting point in position relative to the X-axis |
-| x2   | Float | The ending point in position relative to the X-axis   |
-| w    | Float | Width                                                 |
-| h    | Float | Height                                                |
-| h2   | Float | The second height value                               |
+| Name    | Type  | Description                                           |
+| ------- | ----- | ----------------------------------------------------- |
+| x1      | Float | The starting point in position relative to the X-axis |
+| x2      | Float | The ending point in position relative to the X-axis   |
+| w       | Float | Width                                                 |
+| h       | Float | Height                                                |
+| h2      | Float | The second height value                               |
+| n[1, 2] | Float | Height value perpendicular to the refy profile        |
+
 
 ## Controlling sides visibility
 
@@ -56,18 +59,18 @@ Use normal type attribute if you are using opaque texture. When using textures w
 If you have two surfaces that are overlapping each other, specify the zbias attribute, so this surface will appear "above" the second surface
 :::
 
-| Name       | Type                       | Allowed values       | Description                                    | Optional |
-| ---------- | -------------------------- | -------------------- | ---------------------------------------------- | -------- |
-| [t, m, c]  | [Texture, Material, Color] |                      | Texture, material and color of all sides       |          |
-| [t, m, c]1 | [Texture, Material, Color] |                      | Texture, material and color of the left side   | True     |
-| [t, m, c]2 | [Texture, Material, Color] |                      | Texture, material and color of the right side  | True     |
-| [t, m, c]3 | [Texture, Material, Color] |                      | Texture, material and color of the top side    | True     |
-| [t, m, c]4 | [Texture, Material, Color] |                      | Texture, material and color of the bottom side | True     |
-| [t, m, c]5 | [Texture, Material, Color] |                      | Texture, material and color of the rear side   | True     |
-| [t, m, c]6 | [Texture, Material, Color] |                      | Texture, material and color of the front side  | True     |
-| scale      | Float                      |                      | Texture scaling factor                         |          |
-| type       | String                     | normal, blend, glass | Type                                           |          |
-| zbias      | +Integer                   |                      | Z-index                                        | True     |
+| Name                     | Type                       | Allowed values       | Description                                    | Optional |
+| ------------------------ | -------------------------- | -------------------- | ---------------------------------------------- | -------- |
+| [t, m, c]                | [Texture, Material, Color] |                      | Texture, material and color of all sides       |          |
+| [t, m, c]1               | [Texture, Material, Color] |                      | Texture, material and color of the left side   | True     |
+| [t, m, c]2               | [Texture, Material, Color] |                      | Texture, material and color of the right side  | True     |
+| [t, m, c]3               | [Texture, Material, Color] |                      | Texture, material and color of the top side    | True     |
+| [t, m, c]4               | [Texture, Material, Color] |                      | Texture, material and color of the bottom side | True     |
+| [t, m, c]5               | [Texture, Material, Color] |                      | Texture, material and color of the rear side   | True     |
+| [t, m, c]6               | [Texture, Material, Color] |                      | Texture, material and color of the front side  | True     |
+| scale[1, 2, 3, 4, 5, 6]? | Float                      |                      | Texture scaling factor                         |          |
+| type                     | String                     | normal, blend, glass | Type                                           |          |
+| zbias                    | +Integer                   |                      | Z-index                                        | True     |
 
 ## Code snippets
 
@@ -80,4 +83,5 @@ If you have two surfaces that are overlapping each other, specify the zbias attr
     -->
     <railing x1="0" x2="25" h="0.5" w="0.1" t="Textures\railing-glass-cut.png" m="Materials\window.xml" c="0xFFFFFFFF" y="0" z="-1" refx="inrun" />
     <railing x1="0" x2="25" h="0.5" w="0.1" t="Textures\railing-glass-cut.png" m="Materials\window.xml" c="0xFFFFFFFF" y="0" z="1" refx="inrun" />
-</hill>```
+</hill>
+```
