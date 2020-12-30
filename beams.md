@@ -105,7 +105,7 @@ The stepper attribute can't be described using only words, as it includes advanc
 | first     | Boolean | True          | Toggles rendering the first beam in beamgroup | True     |
 | last      | Boolean | True          | Toggles rendering the last beam in beamgroup  | True     |
 | end[1, 2] | Boolean | False         | Toggles rendering full shapes of beams        | True     |
-| side      | Boolean | True          | Toggles rendering sides of the beam            | True     |
+| side      | Boolean | True          | Toggles rendering sides of the beam           | True     |
 
 ### Positioning beamgroups
 
@@ -131,6 +131,7 @@ Beamgroups render multiple beams in a range of positions from [x, y, z]1 to [x, 
 ``` xml
 <hill version="DSJ4-1.7.0">
     <!-- Rest of code omitted for clearance -->
+    <!-- This XML outputs in simple barrier placed on left side of the inrun. -->
     <beam x1="5" x2="25" y="1.5" z="1.5" r="0.025" edges="8" end1="true" end2="true" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0x505050" refx="inrun" refy="inrun-top"/>
     <beamgroup x1="5" x2="25" y="0" z="1.5" r="0.025" edges="8" dy1="0" dy2="1.5" end1="false" end2="true" smooth="true" stepper="1" step="1" t="Textures\metal.png" m="Materials\metal.xml" c="0x505050" refx="inrun" refy="inrun-top"/>
 </hill>
