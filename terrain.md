@@ -3,18 +3,19 @@
 Parent element name: terrain\
 Element name: profile
 
-| Attribute | Type  | Default value      | Description                |
-| --------- | ----- | ------------------ | -------------------------- |
-| in        | Float |                    | Inrun weight               |
-| y0        | Float |                    | Horizon in terms of Y-axis |
-| sd        | Float | 10.0               | Smooth distance            |
-| fd        | Float | 300.0              | Fade distance              |
-| sc        | Float | 0.1                | Fractal scale              |
-| sm        | Float | 0.5                | Fractal smoothness         |
-| rs        | Float |                    | Seed                       |
-| c[1, 2]   | Color | 0x4B4111, 0x6E7745 | Colors                     |
-| tsc       | Float | 0.008              | Tree fractal scale         |
-| tsm       | Float | 0.4                | Tree fractal smoothness    |
+| Attribute  | Type    | Default value      | Description                                                |
+| ---------- | ------- | ------------------ | ---------------------------------------------------------- |
+| in         | Float   |                    | Inrun weight                                               |
+| y0         | Float   |                    | Horizon in terms of Y-axis                                 |
+| sd         | Float   | 10.0               | Smooth distance                                            |
+| fd         | Float   | 300.0              | Fade distance                                              |
+| sc         | Float   | 0.1                | Fractal scale                                              |
+| sm         | Float   | 0.5                | Fractal smoothness                                         |
+| rs         | Float   |                    | Seed                                                       |
+| c[1, 2]    | Color   | 0x4B4111, 0x6E7745 | Colors                                                     |
+| tsc        | Float   | 0.008              | Tree fractal scale                                         |
+| tsm        | Float   | 0.4                | Tree fractal smoothness                                    |
+| fillraised | Boolean | True               | Toggles filling the terrain below the raised dhill profile |
 
 ## Terrain profiles
 
