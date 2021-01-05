@@ -117,14 +117,14 @@ These attributes manage the position of the starting beam. The position of the n
 Beamgroups render multiple beams in a range of positions from [x, y, z]1 to [x, y, z]2.
 :::
 
-| Name        | Type  | Description                                                                           |
-| ----------- | ----- | ------------------------------------------------------------------------------------- |
-| dx[1, 2]?   | Float | The position relative to X-axis of starting beam                                      |
-| dy[1, 2]?   | Float | The position relative to Y-axis of starting beam                                      |
-| dz[1, 2]?   | Float | The position relative to Z-axis of starting beam                                      |
-| ny[1, 2]?   | Float | The position perpendicular relative to refy[1, 2]? profile of starting beam           |
-| nz[1, 2]?   | Float | The position perpendicular relative to refz[1, 2]? profile of starting beam           |
-| n_[x, y, z] | Float | The [X, Y, Z]-coordinate of a normal vector to one of side edges of the starting beam | 
+| Name        | Type  | Description                                                                       |
+| ----------- | ----- | --------------------------------------------------------------------------------- |
+| dx[1, 2]?   | Float | The ending points of the beams relative to X-axis                                 |
+| dy[1, 2]?   | Float | The ending points of the beams relative to Y-axis                                 |
+| dz[1, 2]?   | Float | The ending points of the beams relative to Z-axis                                 |
+| ny[1, 2]?   | Float | The ending points of the beams perpendicular relative to refy[1, 2]? profile      |
+| nz[1, 2]?   | Float | The ending points of the beams perpendicular relative to refz[1, 2]? profile      |
+| n_[x, y, z] | Float | The [X, Y, Z]-coordinate of a normal vector to one of side edges of the the beams | 
 
 ## Code snippets
 
