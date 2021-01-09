@@ -26,10 +26,6 @@ means that the profile element is missing maxstep and maxturn attributes explana
 If you know any usage of attributes below, contact the documenation maintainer.
 :::
 
-## guardrail
-
-* legacy-z[1, 2]
-
 ## startgate
 
 * default-adjust
