@@ -28,7 +28,7 @@ Manipulating length of stairs which cover defined refx in DSJ4 is based on manip
 | x2   | Float  | The ending point in position relative to the X-axis   |
 | lz   | Float  | The starting point in position relative to the Z-axis |
 | rz   | Float  | The ending point position relative to the Z-axis      |
-| s    | +Float | Height of one stair                                   |
+| s    | +Float | Length of one stair                                   |
 
 ## Controlling sides visibility
 
