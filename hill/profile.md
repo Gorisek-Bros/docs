@@ -26,6 +26,8 @@ rl is a deprecated, but required attribute. It means that this attribute doesn't
 | beta-l    | +Float   |                | Angle of the tangent at end of the landing area                                                                                                           |          |
 | rl        | +Float   |                | Radius of the circular landing area                                                                                                                       |          |
 | r2        | +Float   |                | Radius of the transition curve from the end of the landing area to end of the transition curve to the outrun at end of the transition curve to the outrun |          |
+| r2x       | +Float   |                | Position shift of U-point (the starting point of the outrun) relative to the end of the landing area in the X-axis | True     |
+| r2y       | +Float   |                | Position shift of U-point (the starting point of the outrun) relative to the end of the landing area in the Y-axis | True     |
 | b0        | +Float   |                | Width of the knoll at the base of the takeoff                                                                                                             |          |
 | bk        | +Float   |                | Width at construction point                                                                                                                               |          |
 | ba        | +Float   |                | Width at safety line                                                                                                                                      |          |

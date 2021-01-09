@@ -40,9 +40,3 @@ If you know any usage of attributes below, contact the documenation maintainer.
 ## beamgroup
 
 * [d, n][x, y, z][1, 2]?
-
-## dhill
-
-### profile
-
-* r2[x, y]
