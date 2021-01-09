@@ -114,15 +114,13 @@ Beamgroups render multiple beams in a range of positions from [x, y, z]1 to [x, 
 
 The intermediate points for beams are calculated with the following formula (for `stepper="0"`):
 
-`
-P(n) = P1 + [(P2 - P1) / Distance(P2 - P1)] * n * step,
-`
+`P(n) = P1 + [(P2 - P1) / Distance(P2 - P1)] * n * step,`
 
 where P1 is [x, y, z]1 point in global coordinate system and P2 is [x, y, z]2 point in global coordinate system.
 :::
 
 ::: tip
-These attributes manage the ending points of each beam relative to `P(n)` point from previous tip.
+These attributes manage the ending points of each beam relative to `P(n)` points from previous tip.
 :::
 
 | Name        | Type  | Description                                                                              |

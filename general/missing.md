@@ -26,12 +26,18 @@ means that the profile element is missing maxstep and maxturn attributes explana
 If you know any usage of attributes below, contact the documenation maintainer.
 :::
 
-## profile
+## guardrail
 
-### line
+* legacy-z[1, 2]
 
-* corner
+## startgate
 
-## lights
+* default-adjust
 
-* zmargin
+## terrain
+
+* x1
+
+## stairs
+
+* d
