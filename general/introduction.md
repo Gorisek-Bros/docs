@@ -33,7 +33,7 @@ Consider the Location section (parent element name is hill and element name is l
 
 | Attribute   | Type     | Allowed values  | Description                             |
 | ----------- | -------- | --------------- | --------------------------------------- |
-| lattitude   | Float    | <-90.0; 90.0>   | Lattitude                               |
+| latitude    | Float    | <-90.0; 90.0>   | Latitude                                |
 | longitude   | Float    | <-180.0; 180.0> | Longitude                               |
 | orientation | +Integer | <0; 360>        | Terrain rotation in regard to the Earth |
 | timezone    | Integer  | <-12; 12>       | Time zone                               |

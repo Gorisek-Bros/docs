@@ -40,10 +40,10 @@ By changing n_[x, y, z] attributes, you can control rotation of the beam sides.
 
 ### Sizing beams
 
-| Name      | Type   | Description                   | Optional |
-| --------- | ------ | ----------------------------- | -------- |
-| r[1, 2]?  | +Float | Beam radius                   |          |
-| rb[1, 2]? | +Float | Second beam radius value      | True     |
+| Name      | Type   | Description              | Optional |
+| --------- | ------ | ------------------------ | -------- |
+| r[1, 2]?  | +Float | Beam radius              |          |
+| rb[1, 2]? | +Float | Second beam radius value | True     |
 
 ::: tip
 Specify the rb attribute to create the ellipse beam.
