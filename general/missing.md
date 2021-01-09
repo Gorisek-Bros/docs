@@ -34,9 +34,4 @@ If you know any usage of attributes below, contact the documenation maintainer.
 
 ## lights
 
-* n
 * zmargin
-
-## beamgroup
-
-* [d, n][x, y, z][1, 2]?
