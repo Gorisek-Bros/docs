@@ -16,7 +16,7 @@ This section of the documentation contains things, that can't be described using
 | y[1, 2]     | Float  |                                                                          | The position relative to the Y-axis                                         | True     |
 | z[1, 2]     | Float  |                                                                          | The position relative to the Z-axis                                         | True     |
 | d           | Float  |                                                                          | The shift in position relative to Z-axis                                    | True     |
-| refx[1, 2]? | String | A built-in reference which applies for refx                              | A reference to the X-axis, which railings are based on                      | True     |
+| refx[1, 2]? | String | A built-in reference which applies for refx or custom refx id            | A reference to the X-axis, which railings are based on                      | True     |
 | refy        | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis, which railings are based on                      | True     |
 | refz        | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis, which railings are based on                      | True     |
 | brefy       | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis from the bottom side, which railings are based on | True     |
@@ -60,7 +60,7 @@ Manipulating the length of railings in DSJ4 is based on manipulating x1 and x2 a
 ## Texturing railings
 
 ::: tip
-Use normal type attribute if you are using opaque texture. When using textures with alpha channels such as grid.png, use blend type. In case of transparent textures, use glass type.
+Use normal type attribute if you are using opaque texture. When using textures with alpha channels such as grid.png, use blend type. In the case of transparent textures, use glass type.
 :::
 
 ::: tip
@@ -88,7 +88,7 @@ Texture-refy attribute works only when `pt="false"`.
 :::
 
 ::: tip
-The integer part of *ta[1 - 6]* attributes corresponds to the texture rotation, the float part corresponds to the texture shift.
+The integer part of *ta[1 - 6]* attributes corresponds to the texture rotation, the floating part corresponds to the texture shift.
 :::
 
 ::: warning

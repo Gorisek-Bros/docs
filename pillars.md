@@ -3,7 +3,7 @@
 Parent element name: hill\
 Element name: pillar
 
-Pillars are an essential part of DSJ4 hill buildings. It can be defined as a textured block that can have different shapes. It can be used under the inrun flat section as "tower", under inrun as hill support etc.
+Pillars are an essential part of DSJ4 hill buildings. It can be defined as a textured block that can have different shapes. It can be used under the inrun flat section as "tower", under inrun as hill support, etc.
 
 ::: tip
 This section of the documentation contains things, that can't be described using only words. The best way to test the parameters described below is to use elements from already existing hills and play with them.
@@ -20,7 +20,7 @@ This section of the documentation contains things, that can't be described using
 | brefz       | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the bottom side, which pillar is based on       | True     |
 | reflz       | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the left side, which pillar is based on         | True     |
 | refrz       | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the right side, which pillar is based on        | True     |
-| refx[1, 2]? | String | A built-in reference which applies for refx                              | A reference to the X-axis, which pillar is based on                            | True     |
+| refx[1, 2]? | String | A built-in reference which applies for refx or custom refx id            | A reference to the X-axis, which pillar is based on                            | True     |
 | refy        | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis, which pillar is based on                            | True     |
 | refz        | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis, which pillar is based on                            | True     |
 | treflz      | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis from the top left side, which pillar is based on     | True     |
@@ -35,7 +35,7 @@ If you are a beginner you don't have to use all these refs. The most basic are e
 ## Sizing pillars
 
 ::: tip
-Manipulating the length of pillars in DSJ4 is based on manipulating x1 and x2 attributes, width on lz and rz, height on ty and by.
+Manipulating the length of pillars in DSJ4 is based on manipulating x1 and x2 attributes, width on lz and rz, height on ty, and by.
 :::
 
 | Name           | Type  | Description                                                                        | Optional |
@@ -57,13 +57,13 @@ Manipulating the length of pillars in DSJ4 is based on manipulating x1 and x2 at
 | n[top, bottom] | Float | The top or bottom height in position perpendicular relative to [t, b]refy? profile | True     |
 
 ::: tip
-If you are a beginner you don't have to use all these position attributes. The most basic are enough - x1 and x2, lz and rz, ty and by.
+If you are a beginner you don't have to use all these position attributes. The most basic is enough - x1 and x2, lz and rz, ty and by.
 :::
 
 ## Multiple pillars
 
 ::: tip
-If steps between the next pillars are the same, you can use the step and count attributes to create multiple pillars using only one element.
+If the steps between the next pillars are the same, you can use the step and count attributes to create multiple pillars using only one element.
 :::
 
 | Name  | Type     | Default value | Description                     | Optional |
@@ -85,7 +85,7 @@ If steps between the next pillars are the same, you can use the step and count a
 ## Texturing pillars
 
 ::: tip
-Use normal type attribute if you are using opaque texture. When using textures with alpha channels such as grid.png, use blend type. In case of transparent textures, use glass type.
+Use normal type attribute if you are using opaque texture. When using textures with alpha channels such as grid.png, use blend type. In the case of transparent textures, use glass type.
 :::
 
 ::: tip

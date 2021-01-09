@@ -36,7 +36,7 @@ If you defined the *refx* attribute in this element, all children will have the 
 ## Children elements
 
 ::: tip
-In your defined profile you don't need to use all of the below elements. The only use of the *start* element and one of other elements (*line*, *polynom3*, *arc* or *profile*) is required. *line*, *polynom3*, *arc* or *profile* elements can be used multiple times.
+In your defined profile you don't need to use all of the below elements. The only use of the *start* element and one of other elements (*line*, *polynom3*, *arc*, or *profile*) is required. *line*, *polynom3*, *arc*, or *profile* elements can be used multiple times.
 :::
 
 ### Start
@@ -66,7 +66,7 @@ Element name: line
 The next points can be defined using the line element. As the profile is continuous, the start and lines will be connected in defined coordinates.
 
 ::: tip
-refyx attribute can be used to create surfaces that are not parallel to the refy. You have to set refyx attribute value equal to the x attribute value from the previous element.
+refyx attribute can be used to create surfaces that are not parallel to the refy. You have to set the refyx attribute value equal to the x attribute value from the previous element.
 :::
 
 | Name   | Type    | Description                                                            | Optional |
@@ -99,7 +99,7 @@ then
 ```k1 = f'(x0)```\
 ```k2 = f'(x1)```
 
-In the most cases, you don't need to use mathematical equations of polynom3 and its derivatives. Usually, a simple adjustment of *x*, *y*, *k1* and *k2* attributes is enough.
+In most cases, you don't need to use mathematical equations of polynom3 and its derivatives. Usually, a simple adjustment of *x*, *y*, *k1*, and *k2* attributes is enough.
 :::
 
 | Name  | Type   | Description                                                            | Optional |
@@ -203,7 +203,7 @@ inrun-extension profile example usage can be seen on Bischofshofen HS140 hill.
 :::
 
 ::: tip
-For inrun-terrain and dhill-terrain profiles reference navigate to the Terrain section.
+For inrun-terrain and dhill-terrain profiles, reference navigate to the Terrain section.
 :::
 
 | Name            | Description                                  |

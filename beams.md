@@ -14,28 +14,28 @@ The beam is a bollard. It's ideal to create for example simple handrail. Many be
 | x[1, 2]?    | Float  |                                                                          | The starting and/or ending point in position relative to the X-axis |          |
 | y[1, 2]?    | Float  |                                                                          | The starting and/or ending point in position relative to the Y-axis | True     |
 | z[1, 2]?    | Float  |                                                                          | The starting and/or ending point in position relative to the Z-axis | True     |
-| refx[1, 2]? | String | A built-in reference which applies for refx                              | A reference to the X-axis, which beam is based on                   |          |
+| refx[1, 2]? | String | A built-in reference which applies for refx or custom refx id            | A reference to the X-axis, which beam is based on                   |          |
 | refy[1, 2]? | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis, which beam is based on                   | True     |
 | refz[1, 2]? | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis, which beam is based on                   | True     |
 
 ::: warning
-Beams are always created along the shortest possible path between [x, y, z]1 to [x, y, z]2. It isn't possible to create the curved beams.
+Beams are always created along the shortest possible path between [x, y, z]1 to [x, y, z]2. It isn't possible to create curved beams.
 :::
 
 ### Advanced beams positioning and rotating
 
 ::: tip
-In many cases you don't need to use attributes from this table. However, they can be helpful, if you want to make realistic looking hill.  
+In many cases, you don't need to use attributes from this table. However, they can be helpful, if you want to make a realistic-looking hill.  
 :::
 
-| Name        | Type   | Description                                                                                                       | Optional |
-| ----------- | ------ | ----------------------------------------------------------------------------------------------------------------- | -------- |
-| ny[1, 2]?   | Float  | The starting and/or ending point in position perpendicular (using normal vectors) relative to refy[1, 2]? profile | True     |
-| nz[1, 2]?   | Float  | The starting and/or ending point in position perpendicular (using normal vectors) relative to refz[1, 2]? profile | True     |
-| n_[x, y, z] | Float  | The [X, Y, Z]-coordinate of a normal vector to one of side edges of the beam                                      | True     |
+| Name        | Type  | Description                                                                                                       | Optional |
+| ----------- | ----- | ----------------------------------------------------------------------------------------------------------------- | -------- |
+| ny[1, 2]?   | Float | The starting and/or ending point in position perpendicular (using normal vectors) relative to refy[1, 2]? profile | True     |
+| nz[1, 2]?   | Float | The starting and/or ending point in position perpendicular (using normal vectors) relative to refz[1, 2]? profile | True     |
+| n_[x, y, z] | Float | The [X, Y, Z]-coordinate of a normal vector to one of the side edges of the beam                                  | True     |
 
 ::: tip
-By changing n_[x, y, z] attributes, you can control rotation of the beam sides. 
+By changing n_[x, y, z] attributes, you can control the rotation of the beam sides.
 :::
 
 ### Sizing beams
@@ -50,7 +50,7 @@ Specify the rb attribute to create the ellipse beam.
 :::
 
 ::: tip
-r[1, 2] (rb[1, 2]) are usually used if beam is to have different radius at both ends. 
+r[1, 2] (rb[1, 2]) are usually used if the beam is to have a different radius at both ends.
 :::
 
 ### Controlling sides
@@ -87,7 +87,7 @@ All beams' attributes are working also with beamgroups. However, some extra attr
 :::
 
 ::: tip
-The stepper attribute can't be described using only words, as it includes advanced math and deep knowledge of DSJ4 code. In most cases setting its value to 0 should be enough, however the difference between values can be noticed.
+The stepper attribute can't be described using only words, as it includes advanced math and deep knowledge of DSJ4 code. In most cases setting its value to 0 should be enough, however, the difference between values can be noticed.
 :::
 
 ### Managing steps
@@ -116,21 +116,21 @@ The intermediate points for beams are calculated with the following formula (for
 
 `P(n) = P1 + [(P2 - P1) / Distance(P2 - P1)] * n * step,`
 
-where P1 is [x, y, z]1 point in global coordinate system and P2 is [x, y, z]2 point in global coordinate system.
+where P1 is [x, y, z]1 point in the global coordinate system and P2 is [x, y, z]2 point in the global coordinate system.
 :::
 
 ::: tip
-These attributes manage the ending points of each beam relative to `P(n)` points from previous tip.
+These attributes manage the ending points of each beam relative to `P(n)` points from the previous tip.
 :::
 
-| Name        | Type  | Description                                                                              |
-| ----------- | ----- | ---------------------------------------------------------------------------------------- |
-| dx[1, 2]?   | Float | The ending points of the beams in position relative to X-axis                            |
-| dy[1, 2]?   | Float | The ending points of the beams in position relative to Y-axis                            |
-| dz[1, 2]?   | Float | The ending points of the beams in position relative to Z-axis                            |
-| ny[1, 2]?   | Float | The ending points of the beams in position perpendicular relative to refy[1, 2]? profile |
-| nz[1, 2]?   | Float | The ending points of the beams in position perpendicular relative to refz[1, 2]? profile |
-| n_[x, y, z] | Float | The [X, Y, Z]-coordinate of a normal vector to one of side edges of the the beams        | 
+| Name        | Type  | Description                                                                          |
+| ----------- | ----- | ------------------------------------------------------------------------------------ |
+| dx[1, 2]?   | Float | The ending points of beams in position relative to X-axis                            |
+| dy[1, 2]?   | Float | The ending points of beams in position relative to Y-axis                            |
+| dz[1, 2]?   | Float | The ending points of beams in position relative to Z-axis                            |
+| ny[1, 2]?   | Float | The ending points of beams in position perpendicular relative to refy[1, 2]? profile |
+| nz[1, 2]?   | Float | The ending points of beams in position perpendicular relative to refz[1, 2]? profile |
+| n_[x, y, z] | Float | The [X, Y, Z]-coordinate of a normal vector to one of the side edges of the beams    |
 
 ## Code snippets
 
