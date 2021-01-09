@@ -25,7 +25,7 @@ Beams are always created along the shortest possible path between [x, y, z]1 to 
 ### Advanced beams positioning and rotating
 
 ::: tip
-In many cases you don't need to use attributes from this table. However, they can be helpful, when you want to make realistic looking hill.  
+In many cases you don't need to use attributes from this table. However, they can be helpful, if you want to make realistic looking hill.  
 :::
 
 | Name        | Type   | Description                                                                                                       | Optional |

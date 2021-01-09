@@ -22,6 +22,10 @@ This section of the documentation contains things, that can't be described using
 | brefy       | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis from the bottom side, which railings are based on | True     |
 | trefy       | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis from the top side, which railings are based on    | True     |
 
+::: tip
+*d* attribute works only when *refz* is specified.
+:::
+
 ## Sizing railings
 
 ::: tip
@@ -37,6 +41,10 @@ Manipulating the length of railings in DSJ4 is based on manipulating x1 and x2 a
 | h2      | Float   | The second height value                                        |
 | n[1, 2] | Float   | Height value perpendicular relative to the [t, b]refy? profile |
 | guard   | Boolean | Toggles the vertical cut at the start of the railing           |
+
+::: tip
+*guard* attribute works only when using h[2]? attribute(s).
+:::
 
 ## Controlling sides visibility
 
