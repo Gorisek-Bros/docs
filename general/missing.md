@@ -23,7 +23,7 @@ means that the profile element is missing maxstep and maxturn attributes explana
 :::
 
 ::: tip
-If you know any usage of attributes below, contact the documenation maintainer.
+If you know any usage of attributes below, contact the documentation maintainer.
 :::
 
 ## startgate
