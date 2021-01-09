@@ -95,10 +95,15 @@ If you have two surfaces that are overlapping each other, specify the zbias attr
 | Name         | Type                       | Allowed values       | Description                                          | Optional |
 | ------------ | -------------------------- | -------------------- | ---------------------------------------------------- | -------- |
 | [t, m, c]    | [Texture, Material, Color] |                      | Texture, material and color                          |          |
+| pt           | Boolean                    |                      | Toggles texture snapping to the pillar shape         | True     |
 | scale        | Float                      |                      | Texture scaling factor                               | True     |
 | texture-refy | Float                      |                      | A reference to the Y-axis, which texture is based on | True     |
 | type         | String                     | normal, blend, glass | Texture type                                         | True     |
 | zbias        | +Integer                   |                      | Z-index                                              | True     |
+
+::: tip
+Texture-refy attribute works only when `pt="false"`. 
+:::
 
 ## Code snippets
 
