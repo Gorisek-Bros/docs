@@ -69,13 +69,14 @@ The next points can be defined using the line element. As the profile is continu
 refyx attribute can be used to create surfaces that are not parallel to the refy. You have to set refyx attribute value equal to the x attribute value from the previous element.
 :::
 
-| Name  | Type   | Description                                                            | Optional |
-| ----- | ------ | ---------------------------------------------------------------------- | -------- |
-| x     | Float  | The next point in position relative to the X-axis                      |          |
-| y     | Float  | The next point in position relative to the Y-axis                      |          |
-| refx  | String | A reference to the X-axis, which profile is based on                   | True     |
-| refy  | String | A reference to the Y-axis, which profile is based on                   | True     |
-| refyx | Float  | A reference to X-point, which Y-point (from *y* attribute) is based on | True     |
+| Name   | Type    | Description                                                            | Optional |
+| ------ | ------- | ---------------------------------------------------------------------- | -------- |
+| x      | Float   | The next point in position relative to the X-axis                      |          |
+| y      | Float   | The next point in position relative to the Y-axis                      |          |
+| refx   | String  | A reference to the X-axis, which profile is based on                   | True     |
+| refy   | String  | A reference to the Y-axis, which profile is based on                   | True     |
+| refyx  | Float   | A reference to X-point, which Y-point (from *y* attribute) is based on | True     |
+| corner | Boolean | Toggles better corner rendering at this point                          | True     |
 
 ### Polynom3
 
