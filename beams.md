@@ -19,7 +19,7 @@ The beam is a bollard. It's ideal to create for example simple handrail. Many be
 | refz[1, 2]? | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis, which beam is based on                   | True     |
 
 ::: warning
-Beam is always created along the shortest possible path between [x, y, z]1 to [x, y, z]2. It isn't possible to create a curved beam.
+Beams are always created along the shortest possible path between [x, y, z]1 to [x, y, z]2. It isn't possible to create the curved beams.
 :::
 
 ### Advanced beams positioning and rotating
@@ -110,21 +110,29 @@ The stepper attribute can't be described using only words, as it includes advanc
 ### Positioning beamgroups
 
 ::: tip
-These attributes manage the position of the starting beam. The position of the next beam relative to the X-axis is calculated with formula dx[1, 2]? * n + step, where n is an index of the nth beam in beamgroup.
+Beamgroups render multiple beams in a range of positions from [x, y, z]1 to [x, y, z]2.
+
+The intermediate points for beams are calculated with the following formula (for `stepper="0"`):
+
+`
+P(n) = P1 + [(P2 - P1) / Distance(P2 - P1)] * n * step,
+`
+
+where P1 is [x, y, z]1 point in global coordinate system and P2 is [x, y, z]2 point in global coordinate system.
 :::
 
 ::: tip
-Beamgroups render multiple beams in a range of positions from [x, y, z]1 to [x, y, z]2.
+These attributes manage the ending points of each beam relative to `P(n)` point from previous tip.
 :::
 
-| Name        | Type  | Description                                                                       |
-| ----------- | ----- | --------------------------------------------------------------------------------- |
-| dx[1, 2]?   | Float | The ending points of the beams relative to X-axis                                 |
-| dy[1, 2]?   | Float | The ending points of the beams relative to Y-axis                                 |
-| dz[1, 2]?   | Float | The ending points of the beams relative to Z-axis                                 |
-| ny[1, 2]?   | Float | The ending points of the beams perpendicular relative to refy[1, 2]? profile      |
-| nz[1, 2]?   | Float | The ending points of the beams perpendicular relative to refz[1, 2]? profile      |
-| n_[x, y, z] | Float | The [X, Y, Z]-coordinate of a normal vector to one of side edges of the the beams | 
+| Name        | Type  | Description                                                                              |
+| ----------- | ----- | ---------------------------------------------------------------------------------------- |
+| dx[1, 2]?   | Float | The ending points of the beams in position relative to X-axis                            |
+| dy[1, 2]?   | Float | The ending points of the beams in position relative to Y-axis                            |
+| dz[1, 2]?   | Float | The ending points of the beams in position relative to Z-axis                            |
+| ny[1, 2]?   | Float | The ending points of the beams in position perpendicular relative to refy[1, 2]? profile |
+| nz[1, 2]?   | Float | The ending points of the beams in position perpendicular relative to refz[1, 2]? profile |
+| n_[x, y, z] | Float | The [X, Y, Z]-coordinate of a normal vector to one of side edges of the the beams        | 
 
 ## Code snippets
 
