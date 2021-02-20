@@ -42,7 +42,7 @@ Consider the Location section (parent element name is hill and element name is l
 Basing on the information above, you can write the following XML code.
 
 ``` xml
-<hill version="DSJ4-1.7.0">
+<hill version="DSJ4-1.8.0">
     <!-- Rest of code omitted for clearance -->
     <!-- 
         The parent element is hill, so the location element is placed under the hill attribute

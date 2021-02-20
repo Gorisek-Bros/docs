@@ -42,7 +42,7 @@ Consider the Location section (parent element name is hill and element name is l
 Basing on the information above, you can write the following XML code.
 
 ``` xml
-<hill version="DSJ4-1.7.0">
+<hill version="DSJ4-1.8.0">
     <!-- Rest of code omitted for clearance -->
     <!-- 
         The parent element is hill, so the location element is placed under the hill attribute
@@ -54,7 +54,7 @@ Basing on the information above, you can write the following XML code.
 ```
 
 ::: danger
-Version attribute in the hill element equal to **DSJ4-1.5.0** or **DSJ4-1.7.0** is required.
+Version attribute in the hill element equal to **DSJ4-1.5.0**, **DSJ4-1.7.0** or **DSJ4-1.8.0** is required.
 :::
 
 ## Understanding types

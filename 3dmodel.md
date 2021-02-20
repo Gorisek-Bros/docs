@@ -1,7 +1,11 @@
 # 3D Model
 
 Parent element name: hill\
-Element name: 3dmodel
+Element name: 3dmodel or model
+
+::: warning
+You can name element **3dmodel** in DSJ4 versions from 1.7.0, **model** only from 1.8.0.
+:::
 
 ::: tip
 Attributes related to skeletal modeling are usually not needed.
@@ -161,7 +165,11 @@ Add seams between vertices in different batches to smoothen the surface when usi
 ## 3D Model Instance
 
 Parent element name: hill\
-Element name: 3dmodel-instance
+Element name: 3dmodel-instance or model-instance
+
+::: warning
+You can name element **3dmodel** in DSJ4 versions from 1.7.0, **model** only from 1.8.0.
+:::
 
 | Attribute | Type   | Default value | Description                                          |
 | --------- | ------ | ------------- | ---------------------------------------------------- |
@@ -176,9 +184,9 @@ Element name: 3dmodel-instance
 ## Code snippets
 
 ```xml
-<hill version="DSJ4-1.7.0">
+<hill version="DSJ4-1.8.0">
     <!-- Rest of code omitted for clearance -->
-   <3dmodel id="vdf134-roof">
+   <model id="vdf134-roof">
       <batch id="roof" texture1="Textures\concrete5.png" material="Materials\material1.xml" fvf="322" order="0">
          <vertex id="1" x="-3" y="0" z="-3" u1="-3" v1="-3" diffuse="0xff747681"/>
          <vertex id="2" x="-3" y="0" z="3" u1="-3" v1="3" diffuse="0xff747681"/>
@@ -201,8 +209,8 @@ Element name: 3dmodel-instance
          <face v1="7" v2="8" v3="9"/>
          <face v1="10" v2="11" v3="12"/>
       </batch>
-   </3dmodel>
-   <3dmodel-instance id="vdf134-roof" refx="inrun0" refy="inrun-top" x="3.525" y="2.85" z="1.175"/>
+   </model>
+   <model-instance id="vdf134-roof" refx="inrun0" refy="inrun-top" x="3.525" y="2.85" z="1.175"/>
 </hill>
 ```
 

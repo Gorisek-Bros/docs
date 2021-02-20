@@ -37,7 +37,7 @@ You can adjust terrain using two built-in profiles. There is no need to include 
 ## Code snippets
 
 ``` xml
-<hill version="DSJ4-1.7.0">
+<hill version="DSJ4-1.8.0">
     <!-- Rest of code omitted for clearance -->
     <!-- This inrun terrain is adjusted in the following way: -->
     <!-- 

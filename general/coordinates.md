@@ -22,7 +22,7 @@ The further you get from the right side of the inrun, the Z-axis value is bigger
 Example code:
 
 ``` xml
-<hill version="DSJ4-1.7.0">
+<hill version="DSJ4-1.8.0">
     <!-- Rest of code omitted for clearance -->
     <!-- Assuming you have the following guardrail defined -->
     <guardrail z1="-1.0" z2="1.0" x="10" />
