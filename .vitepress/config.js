@@ -163,6 +163,10 @@ module.exports = {
         link: "/refx",
       },
       {
+        text: "Markings",
+        link: "/markings",
+      },
+      {
         text: "Profile",
         link: "/profile",
       },
