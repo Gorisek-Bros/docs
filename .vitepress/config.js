@@ -159,6 +159,10 @@ module.exports = {
         link: "/hill",
       },
       {
+        text: "Camera",
+        link: "/camera",
+      },
+      {
         text: "Refx",
         link: "/refx",
       },

@@ -6,11 +6,15 @@ Parent element name: dhill\
 Element name: judgetower
 
 ::: tip
-Judge tower position affects the F7 camera position.
+Optional element.
 :::
 
 ::: tip
-d attribute values are starting from the beginning of the hill profile.
+Judge tower position affects the F7 camera position, unless not defined using camera element.
+:::
+
+::: tip
+d attribute values are relative to the beginning of the downhill.
 :::
 
 ::: tip
@@ -32,10 +36,6 @@ Element name: lights
 
 ::: tip
 You can have multiple lights instances.
-:::
-
-::: warning
-Downhill lights height is hardcoded, its value is equal to 40 meters.
 :::
 
 | Attribute | Type                       | Allowed values                                        | Default value | Description                           |

@@ -1,11 +1,7 @@
-# Markings
+# Markings <version-badge>1.10.0+</version-badge>
 
 Parent element name: dhill\
 Element name: markings
-
-::: warning
-This section is still **subject to change.**
-:::
 
 ## Summer and winter markings
 
@@ -61,8 +57,12 @@ Element name: spray
 Parent element name: twigs\
 Element name: twigs
 
-| Name       | Type     | Allowed values | Description                                     | Optional |
-| ---------- | -------- | -------------- | ----------------------------------------------- | -------- |
-| d          | +Integer |                | Position relative to the downhill               |          |
-| z[1, 2]    | Integer  |                | Position relative to the Z-axis                 |          |
-| refz[1, 2] | String   | left, right    | A built-in reference, which spray is based on   | True     |
+| Name       | Type     | Allowed values | Description                                   | Optional |
+| ---------- | -------- | -------------- | --------------------------------------------- | -------- |
+| d          | +Integer |                | Position relative to the downhill             |          |
+| z[1, 2]    | Integer  |                | Position relative to the Z-axis               |          |
+| refz[1, 2] | String   | left, right    | A built-in reference, which spray is based on | True     |
+
+<script setup>
+import VersionBadge from "./components/version-badge.vue"
+</script>
