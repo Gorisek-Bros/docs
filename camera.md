@@ -4,7 +4,7 @@ Parent element name: hill\
 Element name: camera
 
 ::: tip
-Judge refers to F7, audience refers to F8 and startgate refers to F6 camera.
+Judge refers to F7, audience refers to F8 and startgate refers to F5 camera.
 :::
 
 | Attribute | Type   | Allowed values             | Description                                                 |

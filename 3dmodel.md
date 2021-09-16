@@ -77,29 +77,30 @@ Set staticlighting attribute value to true for static non-moving objects for the
 b1, b2, b3, b4 and refbone attributes apply for skeletal modeling.
 :::
 
-| Attribute      | Type     | Default value | Description                                                                              |
-| -------------- | -------- | ------------- | ---------------------------------------------------------------------------------------- |
-| id             | String   |               | Batch Identification                                                                     |
-| fvf            | +Integer | 0             | Flexible Vertex Format                                                                   |
-| texture1       | Texture  |               | Batch texture                                                                            |
-| material       | Material |               | Batch material                                                                           |
-| order          | +Integer | 0             | Rendering order                                                                          |
-| zbias          | Float    | 0             | Z-index                                                                                  |
-| alphatest      | +Integer | 0             | Toggles rendering based on alpha                                                         |
-| blending       | Boolean  | False         | Toggles alpha blending                                                                   |
-| culling        | Boolean  | True          | Toggles face culling (CCW), should be enabled whenever possible for the best performance |
-| blendmode      | Integer  | 0             | Blending mode                                                                            |
-| zwrite         | Boolean  | True          | Toggles writing Z-values to Z-buffer                                                     |
-| staticligthing | Boolean  | False         | Toggles precalculate lighting                                                            |
-| mipmaplodbias  | Float    | 0.0           | Select sharper/softer mipmap level                                                       |
-| refx           | Float    | 0.0           | Reference of X-point for lighting                                                        |
-| refy           | Float    | 0.0           | Reference of Y-point for lighting                                                        |
-| refz           | Float    | 0.0           | Reference of Z-point for lighting                                                        |
-| b1             | String   |               | Identification of the first bone                                                         |
-| b2             | String   |               | Identification of the second bone                                                        |
-| b3             | String   |               | Identification of the third bone                                                         |
-| b4             | String   |               | Identification of the fourth bone                                                        |
-| refbone        | String   |               | Reference of bone                                                                        |
+| Attribute      | Type     | Default value        | Description                                                                              |
+| -------------- | -------- | -------------------- | ---------------------------------------------------------------------------------------- |
+| id             | String   |                      | Batch Identification                                                                     |
+| fvf            | +Integer | 0                    | Flexible Vertex Format                                                                   |
+| texture1       | Texture  |                      | Batch texture                                                                            |
+| material       | Material |                      | Batch material                                                                           |
+| order          | +Integer | 0                    | Rendering order                                                                          |
+| zbias          | Float    | 0                    | Z-index                                                                                  |
+| alphatest      | +Integer | 0                    | Toggles rendering based on alpha                                                         |
+| blending       | Boolean  | False                | Toggles alpha blending                                                                   |
+| culling        | Boolean  | True                 | Toggles face culling (CCW), should be enabled whenever possible for the best performance |
+| blendmode      | Integer  | 0                    | Blending mode                                                                            |
+| zwrite         | Boolean  | True                 | Toggles writing Z-values to Z-buffer                                                     |
+| staticligthing | Boolean  | False                | Toggles precalculate lighting                                                            |
+| mipmaplodbias  | Float    | 0.0                  | Select sharper/softer mipmap level                                                       |
+| refx           | Float    | 0.0                  | Reference of X-point for lighting                                                        |
+| refy           | Float    | 0.0                  | Reference of Y-point for lighting                                                        |
+| refz           | Float    | 0.0                  | Reference of Z-point for lighting                                                        |
+| b1             | String   |                      | Identification of the first bone                                                         |
+| b2             | String   |                      | Identification of the second bone                                                        |
+| b3             | String   |                      | Identification of the third bone                                                         |
+| b4             | String   |                      | Identification of the fourth bone                                                        |
+| refbone        | String   |                      | Reference of bone                                                                        |
+| type           | String   | normal, blend, glass | Texture type                                                                             |
 
 ## Vertex
 
