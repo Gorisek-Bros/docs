@@ -88,14 +88,23 @@ Element name: label
 You can have multiple label instances.
 :::
 
-| Attribute          | Type     | Allowed values       | Description                       |
-| ------------------ | -------- | -------------------- | --------------------------------- |
-| season             | String   | winter, summer, both | Displayment season                |
-| [summer, winter]-d | +Integer |                      | Position relative to the downhill |
-| text               | String   |                      | Text to be displayed              |
-| textsize           | +Float   |                      | Text size                         |
-| c                  | Color    |                      | Text color                        |
-| alignment          | String   |                      | Text alignment                    |
+::: tip
+Notice the refd[1, 2]? attributes, its allowed values refer to:
+* f - fall line
+* hs - hill size
+* k - construction point
+* p - landing point
+:::
+
+| Attribute          | Type     | Allowed values       | Description                                          | Optional |
+| ------------------ | -------- | -------------------- | ---------------------------------------------------- | -------- |
+| season             | String   | winter, summer, both | Displayment season                                   |          |
+| [summer, winter]-d | +Integer |                      | Position relative to the downhill                    |          |
+| text               | String   |                      | Text to be displayed                                 |          |
+| textsize           | +Float   |                      | Text size                                            |          |
+| c                  | Color    |                      | Text color                                           |          |
+| alignment          | String   |                      | Text alignment                                       | True     |
+| refd[1, 2]?        | String   | f, hs, k, p          | Position relative to the built-in distance reference | True     |
 
 ## Plastic
 

@@ -9,11 +9,7 @@ Notice the refd[1, 2]? attributes in banner and line elements, its allowed value
 * f - fall line
 * hs - hill size
 * k - construction point
-* p - 
-:::
-
-::: warning
-You can't use refd[1, 2]? and refz attributes together.
+* p - landing point
 :::
 
 ## Summer and winter markings
@@ -49,7 +45,7 @@ You can use d1 and d2 attributes to define diagonal lines.
 :::
 
 ::: tip
-Custom lines support also special left and right profiles used within refz[1, 2]?.
+Custom lines support also special profiles named left and right used within refz[1, 2]?.
 :::
 
 | Name        | Type     | Allowed values        | Description                                          | Optional |
