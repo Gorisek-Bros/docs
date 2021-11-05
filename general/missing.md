@@ -30,10 +30,6 @@ If you know any usage of attributes below, contact the documentation maintainer.
 
 * default-adjust
 
-## terrain
-
-* x1
-
 ## stairs
 
 * d
