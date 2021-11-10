@@ -105,6 +105,8 @@ Notice the refd[1, 2]? attributes, its allowed values refer to:
 | c                  | Color    |                      | Text color                                           |          |
 | alignment          | String   |                      | Text alignment                                       | True     |
 | refd[1, 2]?        | String   | f, hs, k, p          | Position relative to the built-in distance reference | True     |
+| refz[1, 2]?        | String   |                      | A reference to the Z-axis, which label is based on   | True     |
+| z                  | Float    |                      | Position relative to the Z-axis                      | True     |
 
 ## Plastic
 
