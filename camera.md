@@ -13,9 +13,9 @@ Judge refers to F7, audience refers to F8, startgate refers to F5 camera and tak
 | refx      | String |                                     | A built-in reference to the X-axis which camera is based on |
 | refy      | String |                                     | A built-in reference to the Y-axis which camera is based on |
 | refz      | String |                                     | A built-in reference to the Z-axis which camera is based on |
-| x         | String | judge, audience, startgate          | Position relative to the X-axis                             |
-| y         | String | judge, audience, startgate          | Position relative to the Y-axis                             |
-| z         | String | judge, audience, startgate          | Position relative to the Z-axis                             |
+| x         | Float  |                                     | Position relative to the X-axis                             |
+| y         | Float  |                                     | Position relative to the Y-axis                             |
+| z         | Float  |                                     | Position relative to the Z-axis                             |
 
 <script setup>
 import VersionBadge from "./components/version-badge.vue"
