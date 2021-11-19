@@ -77,29 +77,30 @@ Set staticlighting attribute value to true for static non-moving objects for the
 b1, b2, b3, b4 and refbone attributes apply for skeletal modeling.
 :::
 
-| Attribute      | Type     | Default value | Description                                                                              |
-| -------------- | -------- | ------------- | ---------------------------------------------------------------------------------------- |
-| id             | String   |               | Batch Identification                                                                     |
-| fvf            | +Integer | 0             | Flexible Vertex Format                                                                   |
-| texture1       | Texture  |               | Batch texture                                                                            |
-| material       | Material |               | Batch material                                                                           |
-| order          | +Integer | 0             | Rendering order                                                                          |
-| zbias          | Float    | 0             | Z-index                                                                                  |
-| alphatest      | +Integer | 0             | Toggles rendering based on alpha                                                         |
-| blending       | Boolean  | False         | Toggles alpha blending                                                                   |
-| culling        | Boolean  | True          | Toggles face culling (CCW), should be enabled whenever possible for the best performance |
-| blendmode      | Integer  | 0             | Blending mode                                                                            |
-| zwrite         | Boolean  | True          | Toggles writing Z-values to Z-buffer                                                     |
-| staticligthing | Boolean  | False         | Toggles precalculate lighting                                                            |
-| mipmaplodbias  | Float    | 0.0           | Select sharper/softer mipmap level                                                       |
-| refx           | Float    | 0.0           | Reference of X-point for lighting                                                        |
-| refy           | Float    | 0.0           | Reference of Y-point for lighting                                                        |
-| refz           | Float    | 0.0           | Reference of Z-point for lighting                                                        |
-| b1             | String   |               | Identification of the first bone                                                         |
-| b2             | String   |               | Identification of the second bone                                                        |
-| b3             | String   |               | Identification of the third bone                                                         |
-| b4             | String   |               | Identification of the fourth bone                                                        |
-| refbone        | String   |               | Reference of bone                                                                        |
+| Attribute      | Type     | Default value        | Description                                                                              |
+| -------------- | -------- | -------------------- | ---------------------------------------------------------------------------------------- |
+| id             | String   |                      | Batch Identification                                                                     |
+| fvf            | +Integer | 0                    | Flexible Vertex Format                                                                   |
+| texture1       | Texture  |                      | Batch texture                                                                            |
+| material       | Material |                      | Batch material                                                                           |
+| order          | +Integer | 0                    | Rendering order                                                                          |
+| zbias          | Float    | 0                    | Z-index                                                                                  |
+| alphatest      | +Integer | 0                    | Toggles rendering based on alpha                                                         |
+| blending       | Boolean  | False                | Toggles alpha blending                                                                   |
+| culling        | Boolean  | True                 | Toggles face culling (CCW), should be enabled whenever possible for the best performance |
+| blendmode      | Integer  | 0                    | Blending mode                                                                            |
+| zwrite         | Boolean  | True                 | Toggles writing Z-values to Z-buffer                                                     |
+| staticligthing | Boolean  | False                | Toggles precalculate lighting                                                            |
+| mipmaplodbias  | Float    | 0.0                  | Select sharper/softer mipmap level                                                       |
+| refx           | Float    | 0.0                  | Reference of X-point for lighting                                                        |
+| refy           | Float    | 0.0                  | Reference of Y-point for lighting                                                        |
+| refz           | Float    | 0.0                  | Reference of Z-point for lighting                                                        |
+| b1             | String   |                      | Identification of the first bone                                                         |
+| b2             | String   |                      | Identification of the second bone                                                        |
+| b3             | String   |                      | Identification of the third bone                                                         |
+| b4             | String   |                      | Identification of the fourth bone                                                        |
+| refbone        | String   |                      | Reference of bone                                                                        |
+| type           | String   | normal, blend, glass | Texture type                                                                             |
 
 ## Vertex
 
@@ -162,6 +163,56 @@ Add seams between vertices in different batches to smoothen the surface when usi
 | b2        | String |               | Identification of the target batch  |
 | v2        | String |               | Identification of the target vertex |
 
+## Transformation
+
+Parent element name: hill\
+Element name: transformation
+
+::: warning
+Matrix and rotate, scale, translate elements exlcude each other. You can have either transformation element with matrix only, or with rotate, scale and tranaslate elements.
+:::
+
+| Attribute | Type   | Description                      |
+| --------- | ------ | -------------------------------- |
+| id        | String | Identification of transformation |
+
+### Matrix
+
+::: tip
+Refer to [this article](https://en.wikipedia.org/wiki/Translation_(geometry)#Matrix_representation) for explanation on matrix representation.
+:::
+
+| Attribute | Type  |
+| --------- | ----- |
+| m11       | Float |
+| m22       | Float |
+| m21       | Float |
+| m33       | Float |
+| m44       | Float |
+
+### Rotate
+
+| Attribute | Type     | Allowed values | Description                     |
+| --------- | -------- | -------------- | ------------------------------- |
+| axis      | String   | x, y, z        | Reference to built-in game axis |
+| angle     | +Integer |                | Rotation angle of target model  |
+
+### Scale
+
+| Attribute | Type     | Description                                  |
+| --------- | -------- | -------------------------------------------- |
+| x         | +Integer | Scale of target model relative to the X-axis |
+| y         | +Integer | Scale of target model relative to the Y-axis |
+| z         | +Integer | Scale of target model relative to the Z-axis |
+
+### Translate
+
+| Attribute | Type     | Description                                        |
+| --------- | -------- | -------------------------------------------------- |
+| x         | +Integer | Translation of target model relative to the X-axis |
+| y         | +Integer | Translation of target model relative to the Y-axis |
+| z         | +Integer | Translation of target model relative to the Z-axis |
+
 ## 3D Model Instance
 
 Parent element name: hill\
@@ -171,15 +222,16 @@ Element name: 3dmodel-instance or model-instance
 You can name element **3dmodel** in DSJ4 versions from 1.7.0, **model** only from 1.8.0.
 :::
 
-| Attribute | Type   | Default value | Description                                          |
-| --------- | ------ | ------------- | ---------------------------------------------------- |
-| id        | String |               | Identification of the 3d model to instantiate        |
-| x         | Float  |               | Position relative to the X-axis                      |
-| y         | Float  |               | Position relative to the Y-axis                      |
-| z         | Float  |               | Position relative to the Z-axis                      |
-| refx      | String |               | A reference to the X-axis, which 3dmodel is based on |
-| refy      | String |               | A reference to the Y-axis, which 3dmodel is based on |
-| refz      | String |               | A reference to the Z-axis, which 3dmodel is based on |
+| Attribute      | Type   | Default value | Description                                          |
+| -------------- | ------ | ------------- | ---------------------------------------------------- |
+| id             | String |               | Identification of the 3d model to instantiate        |
+| x              | Float  |               | Position relative to the X-axis                      |
+| y              | Float  |               | Position relative to the Y-axis                      |
+| z              | Float  |               | Position relative to the Z-axis                      |
+| refx           | String |               | A reference to the X-axis, which 3dmodel is based on |
+| refy           | String |               | A reference to the Y-axis, which 3dmodel is based on |
+| refz           | String |               | A reference to the Z-axis, which 3dmodel is based on |
+| transformation | String |               | A reference to transformation element                |
 
 ## Code snippets
 

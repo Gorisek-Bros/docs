@@ -6,11 +6,15 @@ Parent element name: dhill\
 Element name: judgetower
 
 ::: tip
-Judge tower position affects the F7 camera position.
+Optional element.
 :::
 
 ::: tip
-d attribute values are starting from the beginning of the hill profile.
+Judge tower position affects the F7 camera position, unless not defined using camera element.
+:::
+
+::: tip
+d attribute values are relative to the beginning of the downhill.
 :::
 
 ::: tip
@@ -34,23 +38,20 @@ Element name: lights
 You can have multiple lights instances.
 :::
 
-::: warning
-Downhill lights height is hardcoded, its value is equal to 40 meters.
-:::
-
-| Attribute | Type                       | Allowed values                                        | Default value | Description                           |
-| --------- | -------------------------- | ----------------------------------------------------- | ------------- | ------------------------------------- |
-| x1        | Float                      | The starting point in position relative to the X-axis | 0             |                                       |
-| x2        | Float                      | The ending point in position relative to the X-axis   | 100           |                                       |
-| step      | +Float                     |                                                       |               | Step between lamps                    |
-| size      | +Float                     |                                                       |               | Lamps size                            |
-| h         | Float                      |                                                       | 0.0           | The position relative to the Z-axis   |
-| d         | Float                      |                                                       | 0.1           | The position relative to the Y-axis   |
-| [r, g, b] | +Float                     | <0.0; 1.0>                                            |               | Light color                           |
-| attn      | Float                      |                                                       |               | Lights attenaution                    |
-| range     | Float                      |                                                       |               | Lights range                          |
-| side      | String                     | left, right                                           |               | Placement in terms of downhill side   |
-| [t, m, c] | [Texture, Material, Color] |                                                       |               | Lamp pole texture, material and color |
+| Attribute  | Type                       | Allowed values | Default value     | Description                                                   | Optional |
+| ---------- | -------------------------- | -------------- | ----------------- | ------------------------------------------------------------- | -------- |
+| x1         | Float                      |                | 0                 | The starting point in position relative to the X-axis         |          |
+| x2         | Float                      |                | 100               | The ending point in position relative to the X-axis           |          |
+| step       | +Float                     |                |                   | Step between lamps                                            |          |
+| size       | +Float                     |                |                   | Lamps size                                                    |          |
+| h          | Float                      |                | 0.0               | The position relative to the Z-axis                           |          |
+| d          | Float                      |                | 0.1               | The position relative to the Y-axis                           |          |
+| [r, g, b]  | +Float                     | <0.0; 1.0>     |                   | Light color                                                   |          |
+| attn       | Float                      |                |                   | Lights attenaution                                            |          |
+| range      | Float                      |                |                   | Lights range                                                  |          |
+| side       | String                     | left, right    |                   | Placement in terms of downhill side                           |          |
+| [t, m, c]  | [Texture, Material, Color] |                |                   | Lamp pole texture, material and color                         |          |
+| [b, t]refy | String                     |                | terrain, terrain0 | A built-in reference to the Y-axis, which lights are based on | True     |
 
 ## Wind flags
 
@@ -83,11 +84,29 @@ Element name: label
 
 ![2](/label.png)
 
-| Attribute          | Type     | Description                    |
-| ------------------ | -------- | ------------------------------ |
-| [summer, winter]-d | +Integer | Position relative to the dhill |
-| text               | String   | Text to be displayed           |
-| textsize           | +Integer | Text size                      |
+::: tip
+You can have multiple label instances.
+:::
+
+::: tip
+Notice the refd[1, 2]? attributes, its allowed values refer to:
+* f - fall line
+* hs - hill size
+* k - construction point
+* p - landing point
+:::
+
+| Attribute          | Type     | Allowed values       | Description                                          | Optional |
+| ------------------ | -------- | -------------------- | ---------------------------------------------------- | -------- |
+| season             | String   | winter, summer, both | Displayment season                                   |          |
+| [summer, winter]-d | +Integer |                      | Position relative to the downhill                    |          |
+| text               | String   |                      | Text to be displayed                                 |          |
+| textsize           | +Float   |                      | Text size                                            |          |
+| c                  | Color    |                      | Text color                                           |          |
+| alignment          | String   |                      | Text alignment                                       | True     |
+| refd[1, 2]?        | String   | f, hs, k, p          | Position relative to the built-in distance reference | True     |
+| refz[1, 2]?        | String   |                      | A reference to the Z-axis, which label is based on   | True     |
+| z                  | Float    |                      | Position relative to the Z-axis                      | True     |
 
 ## Plastic
 
