@@ -191,6 +191,10 @@ module.exports = {
         link: "/beams",
       },
       {
+        text: "Distance markers",
+        link: "/distance-markers"
+      },
+      {
         text: "3D Model",
         link: "/3dmodel",
       },
