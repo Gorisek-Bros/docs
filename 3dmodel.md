@@ -236,7 +236,7 @@ You can name element **3dmodel** in DSJ4 versions from 1.7.0, **model** only fro
 ## Code snippets
 
 ```xml
-<hill version="DSJ4-1.8.0">
+<hill version="DSJ4-1.10.0">
     <!-- Rest of code omitted for clearance -->
    <model id="vdf134-roof">
       <batch id="roof" texture1="Textures\concrete5.png" material="Materials\material1.xml" fvf="322" order="0">

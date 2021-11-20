@@ -108,7 +108,7 @@ Texture-refy attribute works only when `pt="false"`.
 ## Code snippets
 
 ``` xml
-<hill version="DSJ4-1.8.0">
+<hill version="DSJ4-1.10.0">
     <!-- Rest of code omitted for clearance -->
     <!-- This XML outputs in pillar placed directly under the flat section of the inrun. -->
     <pillar brefy="terrain" trefy="inrun-top" t="Textures\concrete1.png" m="Materials\material1.xml" c="0xf2e5c7" reflz="inrun-left" refrz="inrun-right" x1="0" x2="3" />

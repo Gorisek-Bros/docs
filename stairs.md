@@ -12,7 +12,7 @@ This section of the documentation contains things, that can't be described using
 | ----------- | ------ | ------------------------------------------------------------------------ | ---------------------------------------------------- | -------- |
 | y[1, 2]?    | Float  |                                                                          | The position relative to the Y-axis                  | True     |
 | z[1, 2]?    | Float  |                                                                          | The position relative to the Z-axis                  | True     |
-| refx[1, 2]? | String | A built-in reference which applies for refx or custom refx id                              | A reference to the X-axis, which stairs are based on | True     |
+| refx[1, 2]? | String | A built-in reference which applies for refx or custom refx id            | A reference to the X-axis, which stairs are based on | True     |
 | refy[1, 2]? | String | A built-in reference which applies for refy or your defined profile name | A reference to the Y-axis, which stairs are based on | True     |
 | refz[1, 2]? | String | A built-in reference which applies for refz or your defined profile name | A reference to the Z-axis, which stairs are based on | True     |
 
@@ -47,7 +47,7 @@ Manipulating length of stairs which cover defined refx in DSJ4 is based on manip
 ## Code snippets
 
 ``` xml
-<hill version="DSJ4-1.8.0">
+<hill version="DSJ4-1.10.0">
     <!-- Rest of code omitted for clearance -->
     <!-- Assuming that you have guardrail attribute defined with the following parameters -->
     <guardrail z1="-1.0" z2="1.0" x="10" />

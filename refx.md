@@ -7,16 +7,16 @@ Parent element name: hill
 Use this element if you want to have a "ruler" in terms of defined refx attribute.
 :::
 
-| Name  | Type   | Allowed values | Description                                               |
-| ----- | ------ | -------------- | --------------------------------------------------------- |
-| id    | String |                | A refx name                                               |
+| Name  | Type   | Allowed values | Description                                           |
+| ----- | ------ | -------------- | ----------------------------------------------------- |
+| id    | String |                | A refx name                                           |
 | value | Float  |                | The starting point in position relative to the X-axis |
-| refx  | String | inrun, dhill   | A reference to the X-axis, which refx is based on         |
+| refx  | String | inrun, dhill   | A reference to the X-axis, which refx is based on     |
 
 ## Code snippet
 
 ``` xml
-<hill version="DSJ4-1.8.0">
+<hill version="DSJ4-1.10.0">
     <!-- Rest of code omitted for clearance -->
 
     <!-- If you declare the following refx element -->
