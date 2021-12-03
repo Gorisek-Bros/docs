@@ -159,8 +159,16 @@ module.exports = {
         link: "/hill",
       },
       {
+        text: "Camera",
+        link: "/camera",
+      },
+      {
         text: "Refx",
         link: "/refx",
+      },
+      {
+        text: "Markings",
+        link: "/markings",
       },
       {
         text: "Profile",
@@ -181,6 +189,10 @@ module.exports = {
       {
         text: "Beams and beamgroups",
         link: "/beams",
+      },
+      {
+        text: "Distance markers",
+        link: "/distance-markers"
       },
       {
         text: "3D Model",

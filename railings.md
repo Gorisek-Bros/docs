@@ -98,7 +98,7 @@ Some of *ta[1 - 6], pt[1 - 6]?, texture[1 - 6]-refy?* attributes may not work or
 ## Code snippets
 
 ``` xml
-<hill version="DSJ4-1.8.0">
+<hill version="DSJ4-1.10.0">
     <!-- Rest of code omitted for clearance -->
     <!-- 
         This XML outputs two railings on both inrun sides.

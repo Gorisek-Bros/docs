@@ -135,7 +135,7 @@ These attributes manage the ending points of each beam relative to `P(n)` points
 ## Code snippets
 
 ``` xml
-<hill version="DSJ4-1.8.0">
+<hill version="DSJ4-1.10.0">
     <!-- Rest of code omitted for clearance -->
     <!-- This XML outputs in simple barrier placed on left side of the inrun. -->
     <beam x1="5" x2="25" y="1.5" z="1.5" r="0.025" edges="8" end1="true" end2="true" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0x505050" refx="inrun" refy="inrun-top"/>

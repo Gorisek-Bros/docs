@@ -7,7 +7,6 @@ Element name: lights
 Optional element.
 :::
 
-
 | Name        | Type    | Allowed values                                                           | Default value | Description                                                 | Optional |
 | ----------- | ------- | ------------------------------------------------------------------------ | ------------- | ----------------------------------------------------------- | -------- |
 | refx[1, 2]? | String  | A built-in reference which applies for refx or custom refx id            | inrun         | A reference to the X-axis, which lights are based on        | True     |

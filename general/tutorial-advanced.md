@@ -11,7 +11,7 @@ In this tutorial, we're going to make a semi-advanced hill.
 First, copy the code below and paste it into your own created .xml file.
 
 ```xml
-<hill version="DSJ4-1.8.0">
+<hill version="DSJ4-1.10.0">
     <location latitude="49.1976" longitude="20.0712" orientation="245" timezone="2" altitude="1300" />
     <weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1" />
     <inrun>
@@ -173,7 +173,7 @@ Now we are going to add a simple building like in Einsiedeln hill.
 ## Final code
 
 ``` xml
-<hill version="DSJ4-1.8.0">
+<hill version="DSJ4-1.10.0">
     <location latitude="49.1976" longitude="20.0712" orientation="245" timezone="2" altitude="1300" />
     <weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1" />
     <inrun>
