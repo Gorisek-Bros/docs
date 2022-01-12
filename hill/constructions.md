@@ -99,7 +99,7 @@ Notice the refd[1, 2]? attributes, its allowed values refer to:
 | Attribute          | Type     | Allowed values       | Description                                          | Optional |
 | ------------------ | -------- | -------------------- | ---------------------------------------------------- | -------- |
 | season             | String   | winter, summer, both | Displayment season                                   |          |
-| [summer, winter]-d | +Integer |                      | Position relative to the downhill                    |          |
+| [summer, winter]-d | +Float |                      | Position relative to the downhill                    |          |
 | text               | String   |                      | Text to be displayed                                 |          |
 | textsize           | +Float   |                      | Text size                                            |          |
 | c                  | Color    |                      | Text color                                           |          |

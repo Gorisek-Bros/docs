@@ -28,12 +28,12 @@ Element name: banner
 
 | Name        | Type     | Allowed values    | Description                                          | Optional |
 | ----------- | -------- | ----------------- | ---------------------------------------------------- | -------- |
-| d[1, 2]     | +Integer |                   | Position relative to the downhill                    |          |
+| d[1, 2]     | +Float |                   | Position relative to the downhill                    |          |
 | side        | String   | both, left, right | Position relative to the downhill side               |          |
 | w           | +Float   |                   | Zone thickness                                       |          |
 | margin      | +Float   |                   | Shift in position relative to the downhill side      |          |
 | c           | Color    |                   | Zone color                                           |          |
-| refd[1, 2]? | String   | f, hs, k, p       | Position relative to the built-in distance reference | True     |
+| refd[1, 2] | String   | f, hs, k, p       | Position relative to the built-in distance reference | True     |
 | z[1, 2]     | Float    |                   | Position relative to the Z-axis                      |          |
 
 ## Summer markings
@@ -49,7 +49,7 @@ Element name: grass
 
 | Name        | Type     | Allowed values    | Description                                          | Optional |
 | ----------- | -------- | ----------------- | ---------------------------------------------------- | -------- |
-| d[1, 2]     | +Integer |                   | Position relative to the downhill                    |          |
+| d[1, 2]     | +Float |                   | Position relative to the downhill                    |          |
 | side        | String   | both, left, right | Position relative to the downhill side               |          |
 | refd[1, 2]? | String   | f, hs, k, p       | Position relative to the built-in distance reference | True     |
 | refz[1, 2]? | String   |                   | A built-in reference, which line is based on         | True     |
@@ -66,14 +66,13 @@ You can use d1 and d2 attributes to define diagonal lines.
 
 | Name        | Type     | Allowed values        | Description                                          | Optional |
 | ----------- | -------- | --------------------- | ---------------------------------------------------- | -------- |
-| type        | String   | summer, winter, twigs | Type of line appearance                              |          |
-| d[1, 2]?    | +Integer |                       | Position relative to the downhill                    |          |
+| d[1, 2]?    | +Float |                       | Position relative to the downhill                    |          |
 | z[1, 2]     | Float    |                       | Position relative to the Z-axis                      |          |
 | w           | +Float   |                       | Line thickness                                       |          |
 | c           | Color    |                       | Line color                                           |          |
 | step        | +Float   |                       | Step between lines relative to the Z-axis            | True     |
 | count       | +Integer |                       | Lines count                                          | True     |
-| refz[1, 2]? | String   |                       | A built-in reference, which line is based on         | True     |
+| refz[1, 2] | String   |                       | A built-in reference, which line is based on         | True     |
 | refd[1, 2]? | String   | f, hs, k, p           | Position relative to the built-in distance reference | True     |
 
 ## Winter markings
@@ -85,8 +84,8 @@ Element name: spray
 
 | Name        | Type     | Allowed values | Description                                          | Optional |
 | ----------- | -------- | -------------- | ---------------------------------------------------- | -------- |
-| d           | +Integer |                | Position relative to the downhill                    |          |
-| z[1, 2]     | Integer  |                | Position relative to the Z-axis                      |          |
+| d[1,2]?           | +Float |                | Position relative to the downhill                    |          |
+| z[1, 2]     | Float  |                | Position relative to the Z-axis                      |          |
 | w           | Float    |                | Spray thickness                                      |          |
 | refz[1, 2]  | String   | left, right    | A built-in reference, which spray is based on        | True     |
 | c           | Color    |                | Spray color                                          |          |
@@ -103,8 +102,8 @@ Element name: twigs
 
 | Name          | Type     | Allowed values | Description                                          | Optional |
 | ------------- | -------- | -------------- | ---------------------------------------------------- | -------- |
-| d             | +Integer |                | Position relative to the downhill                    |          |
-| z[1, 2]       | Integer  |                | Position relative to the Z-axis                      |          |
+| d[1, 2]?             | +Float |                | Position relative to the downhill                    |          |
+| z[1, 2]       | Float  |                | Position relative to the Z-axis                      |          |
 | refz[1, 2]    | String   | left, right    | A built-in reference, which spray is based on        | True     |
 | size          | +Float   |                | Twig size                                            | True     |
 | space         | +Float   |                | Step between twigs relative to the Z-axis            | True     |
