@@ -192,8 +192,6 @@ DSJ4 already includes some predefined profiles, that can be used to create basic
 | dhill-top         | The top side of the downhill   | refy, [b, t]refy |
 | inrun             | The whole inrun                | refx             |
 | inrun-top         | The top side of the inrun      | refy, [b, t]refy |
-| inrun-left-guard  | The left side of the inrun     | refz, ref[l, r]z |
-| inrun-right-guard | The right side of the inrun    | refz, ref[l, r]z |
 | terrain           | The terrain                    | refy, [b, t]refy |
 
 ## Overridable profiles
@@ -208,11 +206,13 @@ inrun-extension profile example usage can be seen on Bischofshofen HS140 hill.
 For inrun-terrain and dhill-terrain profiles, reference navigate to the Terrain section.
 :::
 
-| Name            | Description                                  |
-| --------------- | -------------------------------------------- |
-| inrun-extension | Collision area after the ending of the inrun |
-| inrun-terrain   | Terrain at the inrun                         |
-| dhill-terrain   | Terrain at the downhill                      |
+| Name              | Description                                  |
+| ----------------- | -------------------------------------------- |
+| inrun-extension   | Collision area after the ending of the inrun |
+| inrun-terrain     | Terrain at the inrun                         |
+| dhill-terrain     | Terrain at the downhill                      |
+| inrun-left-guard  | The left side of the inrun                   |
+| inrun-right-guard | The right side of the inrun                  |
 
 ## Code snippets
 
