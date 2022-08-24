@@ -184,15 +184,17 @@ There are two required profiles that you have to define by yourself, without the
 
 DSJ4 already includes some predefined profiles, that can be used to create basic constructions.
 
-| Name        | Placement                      | Applies for      |
-| ----------- | ------------------------------ | ---------------- |
-| dhill       | The whole hill                 | refx             |
-| dhill-left  | The left side of the downhill  | refz, ref[l, r]z |
-| dhill-right | The right side of the downhill | refz, ref[l, r]z |
-| dhill-top   | The top side of the downhill   | refy, [b, t]refy |
-| inrun       | The whole inrun                | refx             |
-| inrun-top   | The top side of the inrun      | refy, [b, t]refy |
-| terrain     | The terrain                    | refy, [b, t]refy |
+| Name              | Placement                      | Applies for      |
+| ----------------- | ------------------------------ | ---------------- |
+| dhill             | The whole hill                 | refx             |
+| dhill-left        | The left side of the downhill  | refz, ref[l, r]z |
+| dhill-right       | The right side of the downhill | refz, ref[l, r]z |
+| dhill-top         | The top side of the downhill   | refy, [b, t]refy |
+| inrun             | The whole inrun                | refx             |
+| inrun-top         | The top side of the inrun      | refy, [b, t]refy |
+| inrun-left-guard  | The left side of the inrun     | refz, ref[l, r]z |
+| inrun-right-guard | The right side of the inrun    | refz, ref[l, r]z |
+| terrain           | The terrain                    | refy, [b, t]refy |
 
 ## Overridable profiles
 
